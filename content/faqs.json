@@ -1,0 +1,32 @@
+[
+  {
+    "id": "f-1",
+    "question": "How fast does Beulah respond?",
+    "answer": "Less than 1 hour during Lagos working hours. Outside those, by the next morning.",
+    "order": 100
+  },
+  {
+    "id": "f-2",
+    "question": "How long does an order take?",
+    "answer": "Two to seven working days for ready pieces, eight to twelve weeks for bridal builds.",
+    "order": 200
+  },
+  {
+    "id": "f-3",
+    "question": "Do you ship to the US or UK?",
+    "answer": "Yes. We ship to most diaspora cities. Shipping cost is confirmed at order, before any payment.",
+    "order": 300
+  },
+  {
+    "id": "f-4",
+    "question": "How does pricing work?",
+    "answer": "Pieces are priced per look. Final pricing depends on fabric and bead work; we share a quote on WhatsApp before any deposit.",
+    "order": 400
+  },
+  {
+    "id": "f-5",
+    "question": "How does the consult work?",
+    "answer": "We talk on WhatsApp, you tell us what you are dressing for, we propose looks. The conversation is free; the build is paid.",
+    "order": 500
+  }
+]

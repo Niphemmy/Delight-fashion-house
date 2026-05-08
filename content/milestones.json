@@ -1,0 +1,58 @@
+[
+  {
+    "id": "m-1",
+    "year": 2016,
+    "title": "First atelier door opened",
+    "body": "The first Dé-light room. One sewing machine, two sketchpads, and a client who needed something for an event nobody else could dress her for.",
+    "image": "/designs/lifestyle-01.jpg",
+    "order": 100
+  },
+  {
+    "id": "m-2",
+    "year": 2017,
+    "title": "First bride",
+    "body": "The first wedding gown commission. Hand drawn, hand cut, three fittings. The bride still wears the veil to anniversary dinners.",
+    "image": "/pins/pin-13.jpg",
+    "order": 200
+  },
+  {
+    "id": "m-3",
+    "year": 2019,
+    "title": "First aso ebi build for a 30 person family",
+    "body": "Thirty sets, four weeks, one tone. The build that taught Beulah how to dress a family as a single image.",
+    "image": "/pins/pin-10.jpg",
+    "order": 300
+  },
+  {
+    "id": "m-4",
+    "year": 2021,
+    "title": "First Pinterest pin crosses 10,000 saves",
+    "body": "The pin nobody promoted. The first signal that the work was carrying further than the word of mouth.",
+    "image": "/designs/editorial-04.jpg",
+    "order": 400
+  },
+  {
+    "id": "m-5",
+    "year": 2023,
+    "title": "100,000 monthly saves",
+    "body": "The Pinterest profile crosses 100,000 monthly saves. Beulah hires the second seamstress.",
+    "image": "/designs/editorial-07.jpg",
+    "order": 500
+  },
+  {
+    "id": "m-6",
+    "year": 2025,
+    "title": "First diaspora order to the UK",
+    "body": "Measurements over WhatsApp, video fitting, shipped to London. The diaspora chapter begins.",
+    "image": "/designs/studio-09.jpg",
+    "order": 600
+  },
+  {
+    "id": "m-7",
+    "year": 2026,
+    "title": "Pinterest crosses 600,000 monthly saves",
+    "body": "The save count that triggered the build of this site. The brand has more reach than memory; the site fixes the memory layer.",
+    "image": "/designs/editorial-11.jpg",
+    "order": 700
+  }
+]

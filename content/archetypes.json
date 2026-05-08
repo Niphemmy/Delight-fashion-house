@@ -1,0 +1,54 @@
+[
+  {
+    "id": "arch-brides",
+    "name": "Delight's Brides",
+    "slug": "brides",
+    "order": 1,
+    "heroH1": "For the day everyone will photograph.",
+    "heroSubhead": "The brides who refuse to look like everyone else's bride.",
+    "heroImage": "/pins/pin-05.jpg",
+    "promise": "Beulah does not design wedding dresses; she designs the woman who walks down the aisle, and then the dress catches up. From the introduction outfit to the white wedding to the reception change, every Dé-light bride leaves with a wardrobe, not just a gown.",
+    "finalH2": "Your day is the most photographed day of your life. Dress for the photos that will outlive you.",
+    "oneLiner": "For the day everyone will photograph. The brides who refuse to look like everyone else's bride.",
+    "cardLabel": "Meet Delight's Brides"
+  },
+  {
+    "id": "arch-aso-ebi",
+    "name": "Aso Ebi Wears",
+    "slug": "aso-ebi",
+    "order": 2,
+    "heroH1": "When the family arrives, you arrive together.",
+    "heroSubhead": "Coordinated, refined, unforgettable.",
+    "heroImage": "/pins/pin-02.jpg",
+    "promise": "The aso ebi sets the tone of the photographs, the energy of the day, and the memory the family will keep. Beulah builds aso ebi sets for sisters, mothers, and friend groups who refuse to be one of fifteen identical outfits in the photos.",
+    "finalH2": "When the family arrives, you arrive together. Let us build the look.",
+    "oneLiner": "When the family arrives, you arrive together. Coordinated, refined, unforgettable.",
+    "cardLabel": "See the Aso Ebi"
+  },
+  {
+    "id": "arch-boss-ladies",
+    "name": "Delight's Boss Ladies",
+    "slug": "boss-ladies",
+    "order": 3,
+    "heroH1": "The wardrobe is a second CV.",
+    "heroSubhead": "For the executive whose presence should be as deliberate as her career.",
+    "heroImage": "/designs/studio-03.jpg",
+    "promise": "Boss Ladies is for the woman who has stopped buying outfits and started building a wardrobe. Two piece power sets, signing meeting dresses, the boardroom build that makes you remembered before you speak. Beulah is your stylist, not a designer; her job is to make you look like the woman your title says you are.",
+    "finalH2": "Your wardrobe is your second CV. Let us write it together.",
+    "oneLiner": "For the executive whose presence should be as deliberate as her career.",
+    "cardLabel": "Meet the Boss Ladies"
+  },
+  {
+    "id": "arch-soft-life",
+    "name": "Delight's Soft Life",
+    "slug": "soft-life",
+    "order": 4,
+    "heroH1": "You have arrived. The pieces should say so quietly.",
+    "heroSubhead": "For the woman who does not need to announce it.",
+    "heroImage": "/designs/lifestyle-02.jpg",
+    "promise": "Soft Life is for the woman whose income, position, and life have all softened in the right ways. The pieces are not loud; they do not need to be. They sit beautifully, they last, and they say the right thing to the right rooms without ever shouting.",
+    "finalH2": "You have arrived. The pieces should say so without saying so.",
+    "oneLiner": "You have arrived. The pieces should say so without saying so.",
+    "cardLabel": "Step into Soft Life"
+  }
+]

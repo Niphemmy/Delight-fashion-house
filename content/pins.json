@@ -1,0 +1,202 @@
+[
+  {
+    "title": "The Crimson Bride",
+    "archetype": "brides",
+    "priceFromNgn": null,
+    "image": "/pins/pin-01.jpg",
+    "featured": true,
+    "story": [
+      "The hand beaded crimson silhouette built for a bride who refused the white reception convention.",
+      "Beulah designed the corset to read as red carpet from the front and as bridal from the side, so every photograph from every angle delivered the same headline.",
+      "Eight to twelve weeks. Three fittings. Hand bead motif unique to the bride."
+    ]
+  },
+  {
+    "title": "The Coral Aso Ebi",
+    "archetype": "aso-ebi",
+    "priceFromNgn": null,
+    "image": "/pins/pin-02.jpg",
+    "featured": true,
+    "story": [
+      "Built in batches for whole families, modified per body so the set photographs as a family but reads as individuals.",
+      "Structured corset top, soft trumpet skirt with detachable train.",
+      "Six sets in four weeks if the deposit lands before the third week."
+    ]
+  },
+  {
+    "title": "The Boardroom Navy",
+    "archetype": "boss-ladies",
+    "priceFromNgn": null,
+    "image": "/pins/pin-03.jpg",
+    "featured": true,
+    "story": [
+      "The two piece set Beulah designed for a CFO who needed one look to do a board meeting in the morning and an investor dinner that evening.",
+      "Cut sits clean over the hip without ever clinging. Reads as authority over a navy shell, soft power over silk."
+    ]
+  },
+  {
+    "title": "Sunday Champagne",
+    "archetype": "soft-life",
+    "priceFromNgn": null,
+    "image": "/pins/pin-04.jpg",
+    "featured": true,
+    "story": [
+      "Champagne silk with a hand finished hem, oversized matching kimono.",
+      "Worn over the slip for brunch, over jeans for a flight, over linen for a meeting that pretends not to be one."
+    ]
+  },
+  {
+    "title": "The Beaded Bride",
+    "archetype": "brides",
+    "priceFromNgn": null,
+    "image": "/pins/pin-05.jpg",
+    "featured": true,
+    "story": [
+      "Hand beaded across the bodice, French tulle from waist to floor.",
+      "Beulah personally pencils the bead pattern after the first consultation; no two layouts have ever been repeated."
+    ]
+  },
+  {
+    "title": "The Sapphire Aso Ebi",
+    "archetype": "aso-ebi",
+    "priceFromNgn": null,
+    "image": "/pins/pin-06.jpg",
+    "featured": true,
+    "story": [
+      "Sapphire with gold thread detail; built for a sister-of-the-bride party of seven.",
+      "Bulk pricing for families of four or more."
+    ]
+  },
+  {
+    "title": "The Signing Suit",
+    "archetype": "boss-ladies",
+    "priceFromNgn": null,
+    "image": "/pins/pin-07.jpg",
+    "featured": false,
+    "story": [
+      "Two piece in deep navy with hand bound buttonholes and a tapered ankle.",
+      "Designed for the contract signing, the press photo, and the dinner after."
+    ]
+  },
+  {
+    "title": "Soft Life Sage",
+    "archetype": "soft-life",
+    "priceFromNgn": null,
+    "image": "/pins/pin-08.jpg",
+    "featured": false,
+    "story": [
+      "Sage silk slip on the bias, hand hem, oversized shawl collar kimono.",
+      "Two fittings, ten to fourteen days from confirmation."
+    ]
+  },
+  {
+    "title": "The Reception Look",
+    "archetype": "brides",
+    "priceFromNgn": null,
+    "image": "/pins/pin-09.jpg",
+    "featured": false,
+    "story": [
+      "The second look for the bride who does not want to leave the dance floor.",
+      "Cocktail length, hand bead at the hem, removable cape detail."
+    ]
+  },
+  {
+    "title": "The Family Aso Ebi",
+    "archetype": "aso-ebi",
+    "priceFromNgn": null,
+    "image": "/pins/pin-10.jpg",
+    "featured": false,
+    "story": [
+      "The set Beulah builds for mothers and aunties when they refuse to be styled like the bridesmaids.",
+      "Adjustable across body shapes; the silhouette holds."
+    ]
+  },
+  {
+    "title": "The Executive Cream",
+    "archetype": "boss-ladies",
+    "priceFromNgn": null,
+    "image": "/pins/pin-11.jpg",
+    "featured": false,
+    "story": [
+      "Hand picked cream for boardroom lighting; the cut sits clean over the hip without ever clinging.",
+      "Worn over a navy shell or a silk camisole, two rooms, two outcomes."
+    ]
+  },
+  {
+    "title": "The Velvet Hour",
+    "archetype": "soft-life",
+    "priceFromNgn": null,
+    "image": "/pins/pin-12.jpg",
+    "featured": false,
+    "story": [
+      "Crushed velvet midi with a soft drape neckline.",
+      "Designed for the dinner where you arrive last and the room turns."
+    ]
+  },
+  {
+    "title": "The Ivory Bride",
+    "archetype": "brides",
+    "priceFromNgn": null,
+    "image": "/pins/pin-13.jpg",
+    "featured": false,
+    "story": [
+      "The civil ceremony piece for the bride who wants the gown without the train.",
+      "Hand draped, lined silk, cut to be photographed seated and standing."
+    ]
+  },
+  {
+    "title": "The Burgundy Aso Ebi",
+    "archetype": "aso-ebi",
+    "priceFromNgn": null,
+    "image": "/pins/pin-14.jpg",
+    "featured": false,
+    "story": [
+      "Deep burgundy with a hand worked gold motif at the cuff.",
+      "The set most often worn to traditional engagements that turn into receptions."
+    ]
+  },
+  {
+    "title": "The Power Two-Piece",
+    "archetype": "boss-ladies",
+    "priceFromNgn": null,
+    "image": "/pins/pin-15.jpg",
+    "featured": false,
+    "story": [
+      "Hand tailored two piece for the woman whose presence enters the room before her name.",
+      "Lined throughout, cut to sit clean across a four hour meeting."
+    ]
+  },
+  {
+    "title": "The Linen Hour",
+    "archetype": "soft-life",
+    "priceFromNgn": null,
+    "image": "/pins/pin-16.jpg",
+    "featured": false,
+    "story": [
+      "Lagos linen, hand finished, cut for the heat without losing the line.",
+      "Worn unbelted to brunch; belted to a meeting; tied at the waist for everything else."
+    ]
+  },
+  {
+    "title": "The Trad",
+    "archetype": "brides",
+    "priceFromNgn": null,
+    "image": "/pins/pin-17.jpg",
+    "featured": false,
+    "story": [
+      "The traditional engagement look for the bride who does not want to be wearing the same set as her cousin.",
+      "Made to commission; six to ten weeks from deposit."
+    ]
+  },
+  {
+    "title": "The Rose Build",
+    "archetype": "soft-life",
+    "priceFromNgn": null,
+    "image": "/pins/pin-18.jpg",
+    "featured": false,
+    "story": [
+      "Dusty rose, lace bodice, soft chiffon skirt.",
+      "The piece for the brunch that becomes a launch announcement."
+    ]
+  }
+]

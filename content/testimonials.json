@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t-1",
+    "quote": "Beulah did not just style me for the launch. She built me a wardrobe that walked into every meeting after.",
+    "name": "Tolulope A.",
+    "titleAndOccasion": "Director of Operations, GTBank · Office wardrobe build",
+    "archetype": "boss-ladies",
+    "order": 100
+  },
+  {
+    "id": "t-2",
+    "quote": "My wedding pictures look like a magazine. I cried at the second fitting because I finally saw the woman I had been picturing in my head since I was a girl.",
+    "name": "Chiamaka O.",
+    "titleAndOccasion": "Bride, Lagos · Reception second look",
+    "archetype": "brides",
+    "order": 200
+  },
+  {
+    "id": "t-3",
+    "quote": "I returned to work after maternity and walked into a corner office that was not yet mine. Within a month, it was. Half of that was the work. Half was the wardrobe.",
+    "name": "Adaeze E.",
+    "titleAndOccasion": "Partner, Lagos law firm · Return to work build",
+    "archetype": "boss-ladies",
+    "order": 300
+  }
+]

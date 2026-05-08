@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tm-1",
+    "name": "Beulah Oluwafisayomi Mobolaji",
+    "role": "Founder, Lead Stylist",
+    "photo": "/designs/founder-portrait.jpg",
+    "oneLiner": "She is the woman who knows what you should wear before you do.",
+    "order": 100
+  },
+  {
+    "id": "tm-2",
+    "name": "Senior Atelier Lead",
+    "role": "Production · Tailoring",
+    "photo": null,
+    "oneLiner": "Hand cut, hand sewn, every fitting walked twice before delivery.",
+    "order": 200
+  },
+  {
+    "id": "tm-3",
+    "name": "Studio Manager",
+    "role": "Client Relations",
+    "photo": null,
+    "oneLiner": "She holds your fitting calendar and your aso ebi family list.",
+    "order": 300
+  }
+]
