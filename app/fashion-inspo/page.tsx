@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { InspoFilter } from "@/components/InspoFilter";
 import { PinCard } from "@/components/PinCard";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { Reveal, RevealStagger, RevealItem } from "@/components/animation/Reveal";
 import { getPins } from "@/lib/sanity";
 
 export const metadata: Metadata = {
@@ -38,11 +39,17 @@ export default async function FashionInspoIndex({
               <p className="text-charcoal/60">No looks in this archetype yet.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5">
+            <RevealStagger
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5"
+              stagger={0.05}
+              amount={0.05}
+            >
               {visible.map((pin) => (
-                <PinCard key={pin._id} pin={pin} />
+                <RevealItem key={pin._id}>
+                  <PinCard pin={pin} />
+                </RevealItem>
               ))}
-            </div>
+            </RevealStagger>
           )}
         </div>
       </section>

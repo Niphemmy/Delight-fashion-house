@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 import { Logo } from "./Logo";
 import { useModal } from "./ModalProvider";
 import { cx } from "@/lib/utils";
+
+const easing = [0.22, 1, 0.36, 1] as const;
 
 const NAV = [
   { href: "/fashion-inspo", label: "Fashion Inspo" },
@@ -85,32 +88,59 @@ export function Header() {
         </button>
       </div>
 
-      {mobileOpen && (
-        <div className="lg:hidden bg-cream border-t border-charcoal/10 fade-mount">
-          <nav className="container-site py-6 flex flex-col gap-1">
-            {NAV.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="font-display text-2xl text-navy py-3 border-b border-charcoal/10 hover:text-crimson transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <button
-              type="button"
-              onClick={() => {
-                setMobileOpen(false);
-                openCheckout({ intent: "consult", source: "mobile-nav" });
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            className="lg:hidden bg-cream border-t border-charcoal/10 overflow-hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: easing }}
+          >
+            <motion.nav
+              className="container-site py-6 flex flex-col gap-1"
+              initial="hidden"
+              animate="show"
+              variants={{
+                hidden: {},
+                show: { transition: { staggerChildren: 0.04, delayChildren: 0.1 } },
               }}
-              className="btn btn-primary w-full mt-4"
             >
-              Book a Style Consult
-            </button>
-          </nav>
-        </div>
-      )}
+              {NAV.map((item) => (
+                <motion.div
+                  key={item.href}
+                  variants={{
+                    hidden: { opacity: 0, x: -16 },
+                    show: { opacity: 1, x: 0, transition: { duration: 0.35, ease: easing } },
+                  }}
+                >
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block font-display text-2xl text-navy py-3 border-b border-charcoal/10 hover:text-crimson transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.button
+                type="button"
+                onClick={() => {
+                  setMobileOpen(false);
+                  openCheckout({ intent: "consult", source: "mobile-nav" });
+                }}
+                className="btn btn-primary w-full mt-4"
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: easing } },
+                }}
+              >
+                Book a Style Consult
+              </motion.button>
+            </motion.nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

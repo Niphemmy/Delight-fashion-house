@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { PinCard } from "@/components/PinCard";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FinalCta } from "@/components/sections/FinalCta";
+import { Reveal, RevealStagger, RevealItem } from "@/components/animation/Reveal";
 import {
   getArchetypeBySlug,
   getArchetypes,
@@ -70,9 +71,11 @@ export default async function ArchetypePage({ params }: ArchetypePageProps) {
 
       <section className="surface-cream-warm section-tight">
         <div className="container-narrow">
-          <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-charcoal/85 max-w-2xl mx-auto text-center pretty-text">
-            {arch.promise}
-          </p>
+          <Reveal>
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-charcoal/85 max-w-2xl mx-auto text-center pretty-text">
+              {arch.promise}
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -81,11 +84,17 @@ export default async function ArchetypePage({ params }: ArchetypePageProps) {
           {pins.length === 0 ? (
             <p className="text-center text-charcoal/60 py-12">More looks coming soon. Beulah is photographing the next batch.</p>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5">
+            <RevealStagger
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5"
+              stagger={0.06}
+              amount={0.05}
+            >
               {pins.map((pin) => (
-                <PinCard key={pin._id} pin={pin} />
+                <RevealItem key={pin._id}>
+                  <PinCard pin={pin} />
+                </RevealItem>
               ))}
-            </div>
+            </RevealStagger>
           )}
         </div>
       </section>
@@ -94,17 +103,17 @@ export default async function ArchetypePage({ params }: ArchetypePageProps) {
 
       <section className="surface-cream-warm section-tight">
         <div className="container-site">
-          <div className="text-center mb-10 lg:mb-14">
+          <Reveal className="text-center mb-10 lg:mb-14">
             <p className="eyebrow mb-3">Sister archetypes</p>
             <h2 className="display-3">There is more than one Dé-light woman.</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5">
+          </Reveal>
+          <RevealStagger className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5" stagger={0.1}>
             {sisters.map((s) => (
-              <Link
-                key={s._id}
-                href={`/gallery/${s.slug}`}
-                className="group relative aspect-[4/5] rounded-sm overflow-hidden bg-cream-deep shadow-card hover:shadow-cardHover transition-shadow"
-              >
+              <RevealItem key={s._id} as="div" className="block">
+                <Link
+                  href={`/gallery/${s.slug}`}
+                  className="group relative aspect-[4/5] rounded-sm overflow-hidden bg-cream-deep shadow-card hover:shadow-cardHover transition-shadow block"
+                >
                 <Image
                   src={s.heroImage}
                   alt={s.name}
@@ -120,15 +129,18 @@ export default async function ArchetypePage({ params }: ArchetypePageProps) {
                     {s.cardLabel} →
                   </span>
                 </div>
-              </Link>
+                </Link>
+              </RevealItem>
             ))}
-          </div>
+          </RevealStagger>
         </div>
       </section>
 
       <section className="surface-crimson grain section text-center">
         <div className="container-narrow">
-          <h2 className="display-2 text-ivory mb-6 max-w-3xl mx-auto text-balance">{arch.finalH2}</h2>
+          <Reveal>
+            <h2 className="display-2 text-ivory mb-6 max-w-3xl mx-auto text-balance">{arch.finalH2}</h2>
+          </Reveal>
         </div>
       </section>
 

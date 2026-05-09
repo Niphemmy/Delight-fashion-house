@@ -1,20 +1,25 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useModal } from "./ModalProvider";
+import { RevealStagger, RevealItem } from "./animation/Reveal";
 import { track } from "@/lib/pixel";
 
 export function ContactTiles() {
   const { openCheckout } = useModal();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <button
+    <RevealStagger className="grid grid-cols-1 md:grid-cols-3 gap-5" stagger={0.1}>
+      <RevealItem>
+      <motion.button
         type="button"
         onClick={() => {
           track("InitiateCheckout", { source: "contact-tile-wa" });
           openCheckout({ source: "contact-tile-wa", intent: "general" });
         }}
-        className="group text-left bg-navy text-cream rounded-md p-7 lg:p-8 border-2 border-gold relative overflow-hidden hover:-translate-y-1 transition-transform shadow-modal"
+        whileHover={{ y: -6 }}
+        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+        className="group text-left bg-navy text-cream rounded-md p-7 lg:p-8 border-2 border-gold relative overflow-hidden shadow-modal w-full h-full"
       >
         <div className="w-12 h-12 rounded-full bg-[#25d366] flex items-center justify-center mb-5 text-white shadow-card">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true">
@@ -25,14 +30,18 @@ export function ContactTiles() {
         <h3 className="font-display text-2xl text-cream mb-2">WhatsApp Beulah directly</h3>
         <p className="text-sm text-cream-warm/85 mb-5">+234 706 954 2891 · Most messages answered within the hour.</p>
         <span className="text-xs font-bold uppercase tracking-eyebrow text-gold">Open WhatsApp →</span>
-      </button>
+      </motion.button>
+      </RevealItem>
 
-      <a
+      <RevealItem>
+      <motion.a
         href="https://www.instagram.com/"
         target="_blank"
         rel="noopener"
         onClick={() => track("ScheduleConsult", { source: "contact-tile-ig" })}
-        className="group text-left bg-cream rounded-md p-7 lg:p-8 border border-charcoal/15 hover:border-crimson hover:-translate-y-1 transition-all shadow-card hover:shadow-cardHover"
+        whileHover={{ y: -6 }}
+        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+        className="group text-left bg-cream rounded-md p-7 lg:p-8 border border-charcoal/15 hover:border-crimson shadow-card hover:shadow-cardHover block h-full"
       >
         <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-crimson via-gold to-crimson flex items-center justify-center mb-5 text-cream">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5" aria-hidden="true">
@@ -45,13 +54,17 @@ export function ContactTiles() {
         <h3 className="font-display text-2xl text-navy mb-2">@Delight Fashion House</h3>
         <p className="text-sm text-charcoal/70 mb-5">The latest fittings, behind the scenes, and what is on the cutting table this week.</p>
         <span className="text-xs font-bold uppercase tracking-eyebrow text-crimson">Open Instagram →</span>
-      </a>
+      </motion.a>
+      </RevealItem>
 
-      <a
+      <RevealItem>
+      <motion.a
         href="https://www.pinterest.com/fayinkabeulah/_created/"
         target="_blank"
         rel="noopener"
-        className="group text-left bg-cream rounded-md p-7 lg:p-8 border border-charcoal/15 hover:border-crimson hover:-translate-y-1 transition-all shadow-card hover:shadow-cardHover"
+        whileHover={{ y: -6 }}
+        transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+        className="group text-left bg-cream rounded-md p-7 lg:p-8 border border-charcoal/15 hover:border-crimson shadow-card hover:shadow-cardHover block h-full"
       >
         <div className="w-12 h-12 rounded-full bg-crimson flex items-center justify-center mb-5 text-cream">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
@@ -62,7 +75,8 @@ export function ContactTiles() {
         <h3 className="font-display text-2xl text-navy mb-2">@fayinkabeulah</h3>
         <p className="text-sm text-charcoal/70 mb-5">Where six hundred thousand women save Dé-light looks every month.</p>
         <span className="text-xs font-bold uppercase tracking-eyebrow text-crimson">Open Pinterest →</span>
-      </a>
-    </div>
+      </motion.a>
+      </RevealItem>
+    </RevealStagger>
   );
 }
