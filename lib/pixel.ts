@@ -13,6 +13,7 @@ declare global {
 type PixelEvent =
   | "PageView"
   | "ViewContent"
+  | "AddToCart"
   | "Lead"
   | "Subscribe"
   | "InitiateCheckout"
@@ -25,6 +26,7 @@ type PixelEvent =
 const STANDARD_EVENTS = new Set([
   "PageView",
   "ViewContent",
+  "AddToCart",
   "Lead",
   "Subscribe",
   "InitiateCheckout",

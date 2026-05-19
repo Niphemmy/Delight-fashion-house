@@ -2,11 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { fontDisplay, fontBody } from "./fonts";
 import { ModalProvider } from "@/components/ModalProvider";
+import { CartProvider } from "@/components/CartProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyWhatsApp } from "@/components/StickyWhatsApp";
 import { TwoStepCtaModal } from "@/components/TwoStepCtaModal";
 import { ArchetypeModal } from "@/components/ArchetypeModal";
+import { CartDrawer } from "@/components/CartDrawer";
 import { PixelLoader } from "@/components/PixelLoader";
 
 export const metadata: Metadata = {
@@ -45,13 +47,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${fontDisplay.variable} ${fontBody.variable}`}>
       <body className="antialiased">
         <ModalProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <StickyWhatsApp />
-          <TwoStepCtaModal />
-          <ArchetypeModal />
-          <PixelLoader />
+          <CartProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <StickyWhatsApp />
+            <TwoStepCtaModal />
+            <ArchetypeModal />
+            <CartDrawer />
+            <PixelLoader />
+          </CartProvider>
         </ModalProvider>
       </body>
     </html>

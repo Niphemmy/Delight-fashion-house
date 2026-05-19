@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Logo } from "./Logo";
 import { useModal } from "./ModalProvider";
+import { CartButton } from "./CartButton";
 import { cx } from "@/lib/utils";
 
 const easing = [0.22, 1, 0.36, 1] as const;
@@ -121,7 +122,8 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-3">
+          <CartButton tone="navy" />
           <button
             type="button"
             onClick={() => openCheckout({ intent: "consult", source: "nav" })}
@@ -131,17 +133,20 @@ export function Header() {
           </button>
         </div>
 
-        <button
-          type="button"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          aria-expanded={mobileOpen}
-          onClick={() => setMobileOpen((v) => !v)}
-          className="lg:hidden inline-flex flex-col items-center justify-center w-12 h-12 gap-1.5 rounded-sm"
-        >
-          <span className={cx("block w-6 h-0.5 bg-navy transition-transform", mobileOpen && "translate-y-2 rotate-45")} />
-          <span className={cx("block w-6 h-0.5 bg-navy transition-opacity", mobileOpen && "opacity-0")} />
-          <span className={cx("block w-6 h-0.5 bg-navy transition-transform", mobileOpen && "-translate-y-2 -rotate-45")} />
-        </button>
+        <div className="lg:hidden flex items-center gap-1">
+          <CartButton tone="navy" />
+          <button
+            type="button"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen((v) => !v)}
+            className="inline-flex flex-col items-center justify-center w-12 h-12 gap-1.5 rounded-sm"
+          >
+            <span className={cx("block w-6 h-0.5 bg-navy transition-transform", mobileOpen && "translate-y-2 rotate-45")} />
+            <span className={cx("block w-6 h-0.5 bg-navy transition-opacity", mobileOpen && "opacity-0")} />
+            <span className={cx("block w-6 h-0.5 bg-navy transition-transform", mobileOpen && "-translate-y-2 -rotate-45")} />
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>

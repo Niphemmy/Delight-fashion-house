@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PinCard } from "@/components/PinCard";
-import { PinPageActions } from "@/components/PinPageActions";
+import { AddToCart } from "@/components/AddToCart";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { getPinBySlug, getPins, getArchetypeBySlug } from "@/lib/sanity";
 import { formatPrice } from "@/lib/utils";
@@ -71,23 +71,23 @@ export default async function PinDetailPage({ params }: PinPageProps) {
 
             <div className="lg:col-span-6 lg:pt-2">
               <p className="eyebrow mb-4">{archetype?.name || pin.archetype}</p>
-              <h1 className="display-1 text-navy mb-5">{pin.title}</h1>
-              <div className="font-display text-2xl sm:text-3xl text-crimson mb-6 pb-6 border-b border-charcoal/15">
-                {formatPrice(pin.priceFromNgn)}
-                <span className="block text-sm sm:text-base font-body text-charcoal/60 mt-1">
-                  {pin.priceFromNgn ? "tailored to your measurements" : "Beulah will send a quote on WhatsApp before any deposit"}
-                </span>
-              </div>
+              <h1 className="display-1 text-navy mb-6">{pin.title}</h1>
 
-              <div className="space-y-4 text-charcoal/85 mb-8 max-w-xl">
+              <AddToCart
+                slug={pin.slug}
+                title={pin.title}
+                image={pin.image}
+                archetype={pin.archetype}
+                basePrice={pin.priceFromNgn}
+              />
+
+              <div className="space-y-4 text-charcoal/85 my-8 max-w-xl">
                 {pin.story.map((para, i) => (
                   <p key={i} className="text-base sm:text-lg leading-relaxed">
                     {para}
                   </p>
                 ))}
               </div>
-
-              <PinPageActions pinName={pin.title} pinUrl={`/fashion-inspo/${pin.slug}`} />
 
               <div className="bg-cream-warm border-l-4 border-gold p-5 rounded-sm">
                 <p className="eyebrow mb-3">What is included</p>
