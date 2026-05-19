@@ -72,6 +72,14 @@ export default async function PinDetailPage({ params }: PinPageProps) {
                 </p>
               )}
 
+              <div className="space-y-4 text-charcoal/85 mb-8 max-w-xl">
+                {pin.story.map((para, i) => (
+                  <p key={i} className="text-base sm:text-lg leading-relaxed">
+                    {para}
+                  </p>
+                ))}
+              </div>
+
               <AddToCart
                 slug={pin.slug}
                 title={pin.title}
@@ -80,15 +88,7 @@ export default async function PinDetailPage({ params }: PinPageProps) {
                 basePrice={pin.priceFromNgn}
               />
 
-              <div className="space-y-4 text-charcoal/85 my-8 max-w-xl">
-                {pin.story.map((para, i) => (
-                  <p key={i} className="text-base sm:text-lg leading-relaxed">
-                    {para}
-                  </p>
-                ))}
-              </div>
-
-              <div className="bg-cream-warm border-l-4 border-gold p-5 rounded-sm">
+              <div className="bg-cream-warm border-l-4 border-gold p-5 rounded-sm mt-8">
                 <p className="eyebrow mb-3">What is included</p>
                 <ul className="space-y-2 text-sm text-navy">
                   {[

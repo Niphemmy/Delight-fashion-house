@@ -79,7 +79,7 @@ export function AddToCart({
 
       {/* Size picker */}
       <div className="flex items-center justify-between mb-3">
-        <span className="text-xs font-bold uppercase tracking-cta text-navy">Choose your size</span>
+        <span className="text-xs font-bold uppercase tracking-cta text-navy">Choose your UK size</span>
         <button
           type="button"
           onClick={openSizeGuide}
@@ -100,7 +100,7 @@ export function AddToCart({
                 : "border-charcoal/15 bg-cream text-navy hover:border-crimson"
             }`}
           >
-            {s.shortLabel}
+            {s.pickerLabel}
           </button>
         ))}
       </div>

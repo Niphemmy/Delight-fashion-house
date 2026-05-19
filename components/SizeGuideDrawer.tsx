@@ -44,7 +44,7 @@ export function SizeGuideDrawer() {
             <header className="flex items-center justify-between px-6 py-5 border-b border-charcoal/10 flex-shrink-0">
               <div>
                 <p className="eyebrow mb-0.5">Find your size</p>
-                <h2 className="font-display text-2xl text-navy">Size Guide</h2>
+                <h2 className="font-display text-2xl text-navy">UK Size Guide</h2>
               </div>
               <button
                 type="button"
@@ -60,36 +60,34 @@ export function SizeGuideDrawer() {
 
             <div className="flex-1 overflow-y-auto px-6 py-5">
               <p className="text-sm text-charcoal/70 leading-relaxed mb-5">
-                Letter sizes mapped to UK dress sizes and body measurements. Between two sizes, choose the larger;
-                the atelier can always take a piece in.
+                Find your UK size from your measurements. Between two sizes, choose the larger; the atelier can
+                always take a piece in.
               </p>
 
-              {/* Size cards */}
-              <div className="space-y-3 mb-7">
-                {STANDARD_SIZES.map((s) => (
-                  <div key={s.code} className="bg-cream-warm rounded-md border border-charcoal/12 p-4">
-                    <div className="flex items-baseline gap-2.5 mb-2.5 pb-2.5 border-b border-charcoal/10">
-                      <span className="font-display text-xl text-crimson">{s.shortLabel}</span>
-                      <span className="text-xs text-charcoal/55">{s.label}</span>
-                      <span className="ml-auto text-sm font-semibold text-navy">{s.ukRange}</span>
-                    </div>
-                    <dl className="grid grid-cols-3 gap-2 text-center">
-                      {[
-                        { k: "Bust", v: s.bustIn },
-                        { k: "Waist", v: s.waistIn },
-                        { k: "Hip", v: s.hipIn },
-                      ].map((m) => (
-                        <div key={m.k}>
-                          <dt className="text-[0.6rem] uppercase tracking-eyebrow text-charcoal/50 font-bold mb-0.5">
-                            {m.k}
-                          </dt>
-                          <dd className="text-sm text-navy font-medium">{m.v} in</dd>
-                        </div>
-                      ))}
-                    </dl>
-                  </div>
-                ))}
+              {/* UK size chart */}
+              <div className="mb-3 overflow-hidden rounded-md border border-charcoal/12">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-navy text-cream">
+                      <th className="py-2.5 px-3 text-left text-[0.62rem] uppercase tracking-eyebrow font-bold">UK</th>
+                      <th className="py-2.5 px-2 text-right text-[0.62rem] uppercase tracking-eyebrow font-bold">Bust</th>
+                      <th className="py-2.5 px-2 text-right text-[0.62rem] uppercase tracking-eyebrow font-bold">Waist</th>
+                      <th className="py-2.5 px-3 text-right text-[0.62rem] uppercase tracking-eyebrow font-bold">Hip</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {STANDARD_SIZES.map((s, i) => (
+                      <tr key={s.code} className={i % 2 ? "bg-cream-warm" : "bg-cream"}>
+                        <td className="py-2.5 px-3 font-display text-base text-crimson">UK {s.uk}</td>
+                        <td className="py-2.5 px-2 text-right text-charcoal/80">{s.bustIn}&quot; / {s.bustCm}cm</td>
+                        <td className="py-2.5 px-2 text-right text-charcoal/80">{s.waistIn}&quot; / {s.waistCm}cm</td>
+                        <td className="py-2.5 px-3 text-right text-charcoal/80">{s.hipIn}&quot; / {s.hipCm}cm</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
+              <p className="text-xs text-charcoal/55 mb-7">Measurements shown in inches and centimetres.</p>
 
               {/* How to measure */}
               <h3 className="font-display text-lg text-navy mb-3">How to measure</h3>

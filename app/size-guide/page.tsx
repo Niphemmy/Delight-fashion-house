@@ -7,7 +7,7 @@ import { STANDARD_SIZES } from "@/lib/sizing";
 export const metadata: Metadata = {
   title: "Size Guide",
   description:
-    "Find your Dé-light size. UK dress sizes mapped to bust, waist, and hip, plus how to measure and when to choose Made to Measure.",
+    "Find your Dé-light UK size. Every UK dress size mapped to bust, waist, and hip, plus how to measure and when to choose Made to Measure.",
 };
 
 const MEASURE_STEPS = [
@@ -31,8 +31,8 @@ export default function SizeGuidePage() {
       <PageHeader
         breadcrumb={[{ href: "/", label: "Home" }, { label: "Size Guide" }]}
         eyebrow="Size Guide"
-        title="Find your Dé-light size."
-        body="Every piece is cut to order. Pick the size that matches your measurements, and Beulah's atelier builds to it. If your shape sits outside the chart, that is what Made to Measure is for."
+        title="Find your UK size."
+        body="Every piece is cut to order. Pick the UK size that matches your measurements, and Beulah's atelier builds to it. If your shape sits outside the chart, that is what Made to Measure is for."
       />
 
       {/* Size chart */}
@@ -48,8 +48,7 @@ export default function SizeGuidePage() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-navy text-cream">
-                  <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">Size</th>
-                  <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">UK</th>
+                  <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">UK Size</th>
                   <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">Bust (in)</th>
                   <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">Waist (in)</th>
                   <th className="p-4 font-body text-xs uppercase tracking-eyebrow font-bold">Hip (in)</th>
@@ -61,11 +60,7 @@ export default function SizeGuidePage() {
               <tbody>
                 {STANDARD_SIZES.map((s, i) => (
                   <tr key={s.code} className={i % 2 === 0 ? "bg-cream" : "bg-cream-warm"}>
-                    <td className="p-4 font-display text-xl text-crimson">
-                      {s.shortLabel}
-                      <span className="block font-body text-xs text-charcoal/55 mt-0.5">{s.label}</span>
-                    </td>
-                    <td className="p-4 font-medium text-navy">{s.ukRange}</td>
+                    <td className="p-4 font-display text-xl text-crimson">UK {s.uk}</td>
                     <td className="p-4 text-charcoal/80">{s.bustIn}</td>
                     <td className="p-4 text-charcoal/80">{s.waistIn}</td>
                     <td className="p-4 text-charcoal/80">{s.hipIn}</td>
@@ -79,27 +74,23 @@ export default function SizeGuidePage() {
           </Reveal>
 
           {/* Mobile cards */}
-          <RevealStagger className="md:hidden grid grid-cols-1 gap-4" stagger={0.07}>
+          <RevealStagger className="md:hidden grid grid-cols-2 gap-3" stagger={0.05}>
             {STANDARD_SIZES.map((s) => (
               <RevealItem
                 key={s.code}
-                className="bg-cream-warm rounded-md border border-charcoal/12 p-5 block"
+                className="bg-cream-warm rounded-md border border-charcoal/12 p-4 block"
               >
-                <div className="flex items-baseline gap-3 mb-3 pb-3 border-b border-charcoal/10">
-                  <span className="font-display text-2xl text-crimson">{s.shortLabel}</span>
-                  <span className="text-sm text-charcoal/60">{s.label}</span>
-                  <span className="ml-auto font-medium text-navy text-sm">{s.ukRange}</span>
+                <div className="font-display text-2xl text-crimson mb-3 pb-2 border-b border-charcoal/10">
+                  UK {s.uk}
                 </div>
-                <dl className="grid grid-cols-3 gap-3 text-center">
+                <dl className="space-y-1.5">
                   {[
                     { k: "Bust", v: s.bustIn },
                     { k: "Waist", v: s.waistIn },
                     { k: "Hip", v: s.hipIn },
                   ].map((m) => (
-                    <div key={m.k}>
-                      <dt className="text-[0.65rem] uppercase tracking-eyebrow text-charcoal/55 font-bold mb-1">
-                        {m.k}
-                      </dt>
+                    <div key={m.k} className="flex justify-between text-sm">
+                      <dt className="text-charcoal/55">{m.k}</dt>
                       <dd className="text-navy font-medium">{m.v} in</dd>
                     </div>
                   ))}
@@ -146,7 +137,7 @@ export default function SizeGuidePage() {
             </h2>
             <p className="body-lead text-cream-warm/85 max-w-xl mx-auto mb-4">
               Bodies are not a chart. If you carry more at the bust, more through the middle, or simply sit between
-              the standard sizes, choose Made to Measure on any design.
+              the UK sizes, choose Made to Measure on any design.
             </p>
             <p className="body-lead text-cream-warm/85 max-w-xl mx-auto mb-8">
               You send your measurements, Beulah builds the piece to your exact body, and the fit is confirmed before
