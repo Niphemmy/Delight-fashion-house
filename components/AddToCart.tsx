@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "./CartProvider";
 import { useModal } from "./ModalProvider";
 import { STANDARD_SIZES, MADE_TO_MEASURE, priceForSize } from "@/lib/sizing";
 import type { SizeCode } from "@/lib/sizing";
 import { formatNgn } from "@/lib/utils";
+import { deliveryEstimate } from "@/lib/delivery";
 import { track } from "@/lib/pixel";
 import type { ArchetypeSlug } from "@/lib/types";
 
@@ -25,7 +25,7 @@ export function AddToCart({
   basePrice: number | null;
 }) {
   const { addItem } = useCart();
-  const { openCheckout } = useModal();
+  const { openCheckout, openSizeGuide } = useModal();
   const [size, setSize] = useState<SizeCode | null>(null);
   const [error, setError] = useState(false);
 
@@ -74,15 +74,19 @@ export function AddToCart({
         )}
       </div>
       <p className="text-sm text-charcoal/55 mb-6 pb-6 border-b border-charcoal/15">
-        Cut to your size in Beulah's atelier. Delivery in 2 to 7 working days.
+        Cut to your size in Beulah's atelier. Delivery in {deliveryEstimate(basePrice)}.
       </p>
 
       {/* Size picker */}
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs font-bold uppercase tracking-cta text-navy">Choose your size</span>
-        <Link href="/size-guide" className="text-xs text-crimson underline underline-offset-2 hover:text-crimson-deep">
+        <button
+          type="button"
+          onClick={openSizeGuide}
+          className="text-xs text-crimson underline underline-offset-2 hover:text-crimson-deep"
+        >
           Size guide
-        </Link>
+        </button>
       </div>
       <div className="grid grid-cols-5 gap-2 mb-3">
         {STANDARD_SIZES.map((s) => (

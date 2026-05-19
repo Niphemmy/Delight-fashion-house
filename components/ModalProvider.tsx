@@ -23,8 +23,11 @@ interface ModalState {
   closeCheckout: () => void;
   openArchetype: () => void;
   closeArchetype: () => void;
+  openSizeGuide: () => void;
+  closeSizeGuide: () => void;
   checkoutOpen: boolean;
   archetypeOpen: boolean;
+  sizeGuideOpen: boolean;
   checkoutContext: CheckoutContext;
 }
 
@@ -33,6 +36,7 @@ const ModalContext = createContext<ModalState | null>(null);
 export function ModalProvider({ children }: { children: ReactNode }) {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [archetypeOpen, setArchetypeOpen] = useState(false);
+  const [sizeGuideOpen, setSizeGuideOpen] = useState(false);
   const [checkoutContext, setCheckoutContext] = useState<CheckoutContext>({});
 
   const openCheckout = useCallback((ctx: CheckoutContext = {}) => {
@@ -43,16 +47,18 @@ export function ModalProvider({ children }: { children: ReactNode }) {
   const closeCheckout = useCallback(() => setCheckoutOpen(false), []);
   const openArchetype = useCallback(() => setArchetypeOpen(true), []);
   const closeArchetype = useCallback(() => setArchetypeOpen(false), []);
+  const openSizeGuide = useCallback(() => setSizeGuideOpen(true), []);
+  const closeSizeGuide = useCallback(() => setSizeGuideOpen(false), []);
 
   // Lock body scroll when any modal is open
   useEffect(() => {
-    const open = checkoutOpen || archetypeOpen;
+    const open = checkoutOpen || archetypeOpen || sizeGuideOpen;
     if (typeof document === "undefined") return;
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [checkoutOpen, archetypeOpen]);
+  }, [checkoutOpen, archetypeOpen, sizeGuideOpen]);
 
   // Esc to close
   useEffect(() => {
@@ -60,6 +66,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
       if (e.key === "Escape") {
         setCheckoutOpen(false);
         setArchetypeOpen(false);
+        setSizeGuideOpen(false);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -72,11 +79,25 @@ export function ModalProvider({ children }: { children: ReactNode }) {
       closeCheckout,
       openArchetype,
       closeArchetype,
+      openSizeGuide,
+      closeSizeGuide,
       checkoutOpen,
       archetypeOpen,
+      sizeGuideOpen,
       checkoutContext,
     }),
-    [openCheckout, closeCheckout, openArchetype, closeArchetype, checkoutOpen, archetypeOpen, checkoutContext]
+    [
+      openCheckout,
+      closeCheckout,
+      openArchetype,
+      closeArchetype,
+      openSizeGuide,
+      closeSizeGuide,
+      checkoutOpen,
+      archetypeOpen,
+      sizeGuideOpen,
+      checkoutContext,
+    ]
   );
 
   return <ModalContext.Provider value={value}>{children}</ModalContext.Provider>;

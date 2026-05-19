@@ -49,6 +49,9 @@ export function buildCartItem(input: {
   };
 }
 
+/** Admin fee charged once per distinct design in the cart. Shown at checkout. */
+export const ADMIN_FEE_PER_DESIGN = 1750;
+
 /** Subtotal of priced lines. Made to Measure lines are excluded (priced on consultation). */
 export function cartSubtotal(items: CartItem[]): number {
   return items.reduce((sum, item) => {
@@ -61,14 +64,36 @@ export function cartCount(items: CartItem[]): number {
   return items.reduce((sum, item) => sum + item.quantity, 0);
 }
 
+/** Number of distinct designs (by slug) in the cart. */
+export function designCount(items: CartItem[]): number {
+  return new Set(items.map((i) => i.slug)).size;
+}
+
+/** Admin fee for the whole cart: NGN 1,750 per distinct design. */
+export function cartAdminFee(items: CartItem[]): number {
+  return designCount(items) * ADMIN_FEE_PER_DESIGN;
+}
+
+/** Order total: subtotal plus admin fee. Made to Measure prices are settled on WhatsApp. */
+export function cartTotal(items: CartItem[]): number {
+  return cartSubtotal(items) + cartAdminFee(items);
+}
+
 function ngn(n: number): string {
   return `NGN ${n.toLocaleString("en-NG")}`;
 }
 
+export interface CheckoutDetails {
+  firstName?: string;
+  location?: string;
+  address?: string;
+}
+
 /**
- * Build the WhatsApp checkout link with the full itemised order.
+ * Build the WhatsApp checkout link with the full itemised order,
+ * the admin fee, the order total, and the delivery destination.
  */
-export function buildOrderWhatsAppLink(items: CartItem[], firstName?: string): string {
+export function buildOrderWhatsAppLink(items: CartItem[], details: CheckoutDetails = {}): string {
   const lines: string[] = ["Hi Beulah, I would like to place an order from Dé-light Fashion House."];
   lines.push("");
 
@@ -85,15 +110,23 @@ export function buildOrderWhatsAppLink(items: CartItem[], firstName?: string): s
 
   lines.push("");
   const subtotal = cartSubtotal(items);
-  if (subtotal > 0) {
-    lines.push(`Subtotal: ${ngn(subtotal)}`);
-  }
+  const adminFee = cartAdminFee(items);
+  if (subtotal > 0) lines.push(`Subtotal: ${ngn(subtotal)}`);
+  if (adminFee > 0) lines.push(`Admin fee: ${ngn(adminFee)}`);
+  if (subtotal > 0) lines.push(`Total: ${ngn(subtotal + adminFee)}`);
   if (items.some((i) => i.madeToMeasure)) {
     lines.push("Some pieces are Made to Measure; the final price is confirmed with you.");
   }
-  if (firstName) {
+
+  if (details.location || details.address) {
     lines.push("");
-    lines.push(`My name is ${firstName}.`);
+    if (details.location) lines.push(`Deliver to: ${details.location}`);
+    if (details.address) lines.push(`Address: ${details.address}`);
+  }
+
+  if (details.firstName) {
+    lines.push("");
+    lines.push(`My name is ${details.firstName}.`);
   }
 
   const text = encodeURIComponent(lines.join("\n"));

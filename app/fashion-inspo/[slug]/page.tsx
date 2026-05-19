@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PinCard } from "@/components/PinCard";
 import { AddToCart } from "@/components/AddToCart";
+import { ProductGallery } from "@/components/ProductGallery";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { getPinBySlug, getPins, getArchetypeBySlug } from "@/lib/sanity";
-import { formatPrice } from "@/lib/utils";
+import { formatPrice, splitDesignTitle } from "@/lib/utils";
+import { deliveryEstimate } from "@/lib/delivery";
 import * as fallback from "@/lib/data";
 
 interface PinPageProps {
@@ -57,21 +58,19 @@ export default async function PinDetailPage({ params }: PinPageProps) {
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-6">
-              <div className="aspect-[4/5] rounded-md overflow-hidden bg-cream-deep shadow-modal relative">
-                <Image
-                  src={pin.image}
-                  alt={pin.title}
-                  fill
-                  sizes="(max-width: 1024px) 90vw, 600px"
-                  priority
-                  className="object-cover"
-                />
-              </div>
+              <ProductGallery images={pin.images} title={pin.title} />
             </div>
 
             <div className="lg:col-span-6 lg:pt-2">
-              <p className="eyebrow mb-4">{archetype?.name || pin.archetype}</p>
-              <h1 className="display-1 text-navy mb-6">{pin.title}</h1>
+              <p className="eyebrow mb-3">{archetype?.name || pin.archetype}</p>
+              <h1 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.1] text-navy">
+                {splitDesignTitle(pin.title).name}
+              </h1>
+              {splitDesignTitle(pin.title).occasion && (
+                <p className="font-display text-lg sm:text-xl italic text-charcoal/55 mt-1.5 mb-6">
+                  {splitDesignTitle(pin.title).occasion}
+                </p>
+              )}
 
               <AddToCart
                 slug={pin.slug}
@@ -94,8 +93,8 @@ export default async function PinDetailPage({ params }: PinPageProps) {
                 <ul className="space-y-2 text-sm text-navy">
                   {[
                     "Hand cut, hand sewn, lined throughout",
-                    "Two fittings at the atelier or by video",
-                    "Delivery within Lagos in 14 to 21 days",
+                    "Cut to your chosen size in Beulah's atelier",
+                    `Delivery in ${deliveryEstimate(pin.priceFromNgn)}`,
                     "International shipping by quote",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">

@@ -9,6 +9,7 @@ import { StickyWhatsApp } from "@/components/StickyWhatsApp";
 import { TwoStepCtaModal } from "@/components/TwoStepCtaModal";
 import { ArchetypeModal } from "@/components/ArchetypeModal";
 import { CartDrawer } from "@/components/CartDrawer";
+import { SizeGuideDrawer } from "@/components/SizeGuideDrawer";
 import { PixelLoader } from "@/components/PixelLoader";
 
 export const metadata: Metadata = {
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <TwoStepCtaModal />
             <ArchetypeModal />
             <CartDrawer />
+            <SizeGuideDrawer />
             <PixelLoader />
           </CartProvider>
         </ModalProvider>
