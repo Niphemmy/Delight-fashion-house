@@ -154,7 +154,7 @@ export function Footer() {
           <div>
             Designed by{" "}
             <a
-              href="https://northernstarbusinessconsult.com"
+              href="https://northern-star-website.vercel.app"
               target="_blank"
               rel="noopener"
               className="text-gold hover:text-cream underline underline-offset-2 transition-colors"
