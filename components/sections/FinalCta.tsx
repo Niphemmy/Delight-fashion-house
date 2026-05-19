@@ -1,10 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/animation/Reveal";
 import { useModal } from "@/components/ModalProvider";
-
-const easing = [0.22, 1, 0.36, 1] as const;
 
 export function FinalCta() {
   const { openCheckout } = useModal();
@@ -26,20 +25,14 @@ export function FinalCta() {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="text-lg text-ivory/85 max-w-xl mx-auto mb-9 leading-relaxed pretty-text">
-            The look you have been pinning is two steps away. Save it to your email, then send the message that
-            starts your wardrobe.
+            The look you have been pinning is waiting in Fashion Inspo. Choose your design, choose your size, and
+            Beulah builds it to you.
           </p>
         </Reveal>
         <Reveal delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <motion.button
-            type="button"
-            onClick={() => openCheckout({ source: "final-cta", intent: "general" })}
-            className="btn bg-navy text-cream hover:bg-navy-deep w-full sm:w-auto"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Save Your Look + Continue to WhatsApp
-          </motion.button>
+          <Link href="/fashion-inspo" className="btn bg-navy text-cream hover:bg-navy-deep w-full sm:w-auto">
+            Browse Fashion Inspo
+          </Link>
           <motion.button
             type="button"
             onClick={() => openCheckout({ source: "final-cta-consult", intent: "consult" })}
