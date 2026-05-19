@@ -13,6 +13,7 @@ const SITEMAP = [
   { href: "/gallery/boss-ladies", label: "Boss Ladies" },
   { href: "/gallery/soft-life", label: "Soft Life" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/size-guide", label: "Size Guide" },
   { href: "/our-story", label: "Our Story" },
   { href: "/contact", label: "Contact" },
 ];
