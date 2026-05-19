@@ -1,202 +1,505 @@
 [
   {
-    "title": "The Crimson Bride",
-    "archetype": "brides",
-    "priceFromNgn": null,
-    "image": "/pins/pin-01.jpg",
-    "featured": true,
-    "story": [
-      "The hand beaded crimson silhouette built for a bride who refused the white reception convention.",
-      "Beulah designed the corset to read as red carpet from the front and as bridal from the side, so every photograph from every angle delivered the same headline.",
-      "Eight to twelve weeks. Three fittings. Hand bead motif unique to the bride."
-    ]
-  },
-  {
-    "title": "The Coral Aso Ebi",
+    "title": "Olive Peplum and Tulle Set for the Polished Aso Ebi",
     "archetype": "aso-ebi",
-    "priceFromNgn": null,
-    "image": "/pins/pin-02.jpg",
+    "priceFromNgn": 75000,
+    "image": "/products/olive-peplum-and-tulle-set-for-the-polished-aso-ebi.jpg",
+    "images": [
+      "/products/olive-peplum-and-tulle-set-for-the-polished-aso-ebi.jpg"
+    ],
     "featured": true,
     "story": [
-      "Built in batches for whole families, modified per body so the set photographs as a family but reads as individuals.",
-      "Structured corset top, soft trumpet skirt with detachable train.",
-      "Six sets in four weeks if the deposit lands before the third week."
+      "A friend group of seven asked me to build aso ebi sets they could all wear again, separately, after the wedding was over. The brief sounded simple. It is not. Seven women, seven shoulders, four bust sizes, three of them still feeding babies, one who refused to wear sleeves, one who insisted on them.",
+      "So the puff sleeve sits where it does because every woman in the group has a different shoulder; the gather at the cap is generous enough to read on the small frame and structured enough to hold the larger one. The peplum forgives lunch. The bodice carries small embellishments at the waist that catch the light when she turns but disappear in a flat photograph, which is the way good aso ebi should work. The tulle skirt is olive on olive, soft and full enough to read on the dance floor without overwhelming the family photograph.",
+      "They wore them at the reception. Three of them have already worn the top, separately, to other events. The skirt comes off; the top goes anywhere. That is the trick to aso ebi that gets reordered."
     ]
   },
   {
-    "title": "The Boardroom Navy",
-    "archetype": "boss-ladies",
-    "priceFromNgn": null,
-    "image": "/pins/pin-03.jpg",
-    "featured": true,
-    "story": [
-      "The two piece set Beulah designed for a CFO who needed one look to do a board meeting in the morning and an investor dinner that evening.",
-      "Cut sits clean over the hip without ever clinging. Reads as authority over a navy shell, soft power over silk."
-    ]
-  },
-  {
-    "title": "Sunday Champagne",
-    "archetype": "soft-life",
-    "priceFromNgn": null,
-    "image": "/pins/pin-04.jpg",
-    "featured": true,
-    "story": [
-      "Champagne silk with a hand finished hem, oversized matching kimono.",
-      "Worn over the slip for brunch, over jeans for a flight, over linen for a meeting that pretends not to be one."
-    ]
-  },
-  {
-    "title": "The Beaded Bride",
-    "archetype": "brides",
-    "priceFromNgn": null,
-    "image": "/pins/pin-05.jpg",
-    "featured": true,
-    "story": [
-      "Hand beaded across the bodice, French tulle from waist to floor.",
-      "Beulah personally pencils the bead pattern after the first consultation; no two layouts have ever been repeated."
-    ]
-  },
-  {
-    "title": "The Sapphire Aso Ebi",
+    "title": "Red Brocade Corset Gown for the Statement Aso Ebi",
     "archetype": "aso-ebi",
-    "priceFromNgn": null,
-    "image": "/pins/pin-06.jpg",
+    "priceFromNgn": 115000,
+    "image": "/products/red-brocade-corset-gown-for-the-statement-aso-ebi.jpg",
+    "images": [
+      "/products/red-brocade-corset-gown-for-the-statement-aso-ebi.jpg"
+    ],
     "featured": true,
     "story": [
-      "Sapphire with gold thread detail; built for a sister-of-the-bride party of seven.",
-      "Bulk pricing for families of four or more."
+      "I drafted this for a client who told me, at the first consultation, that her sister's wedding had four hundred guests, the family aso ebi colour was red, and she had no intention of being one of four hundred women in a red dress that night. So we kept the family colour and threw out the family silhouette.",
+      "The bodice is built around her, not around a reference. The brocade is a hand mounted floral in crimson and antique gold, set onto a corset shape that holds her ribs the way a sentence holds its meaning. The neckline is single shoulder. The back is closed with a hidden zip and twelve hand stitched eye hooks, because zippers loosen during a long evening and an aso ebi night is always longer than anyone predicts.",
+      "The skirt is red tulle over a silk lining, generous on purpose, cut to skim the floor so she could move without thinking about hems. She wore it to the dinner. By the second course, three women had asked her who made it. By the after party, one of them had quietly booked a fitting."
     ]
   },
   {
-    "title": "The Signing Suit",
+    "title": "Aubergine Asymmetric Ruched Peplum and Cream Trouser for the Quiet Power Move",
     "archetype": "boss-ladies",
-    "priceFromNgn": null,
-    "image": "/pins/pin-07.jpg",
+    "priceFromNgn": 47000,
+    "image": "/products/aubergine-asymmetric-ruched-peplum-and-cream-trouser-for-the-quiet-power-move.jpg",
+    "images": [
+      "/products/aubergine-asymmetric-ruched-peplum-and-cream-trouser-for-the-quiet-power-move.jpg"
+    ],
     "featured": false,
     "story": [
-      "Two piece in deep navy with hand bound buttonholes and a tapered ankle.",
-      "Designed for the contract signing, the press photo, and the dinner after."
+      "A judge asked me for something that would let her step out of her robes after a long day on the bench and walk into dinner without changing. The robes do most of her dressing for her in the daytime. After hours, the wardrobe has to do its own work without being theatrical about it.",
+      "So we built her this. The aubergine reads as serious in any light, including the fluorescent of a courthouse corridor and the candle of a private dining room. The asymmetric ruching at the side hides the small softness most women carry through a working day and gives the silhouette its only flourish. Long sleeve, mock neck, cream wide leg trouser, all of it set in a fluid crepe that moves with her without crumpling.",
+      "The peplum hem closes the silhouette like a verdict. She wears this when she wants the dinner she walks into to feel like the second half of a conversation she has already won. She reordered it in oxblood last December."
     ]
   },
   {
-    "title": "Soft Life Sage",
-    "archetype": "soft-life",
-    "priceFromNgn": null,
-    "image": "/pins/pin-08.jpg",
-    "featured": false,
-    "story": [
-      "Sage silk slip on the bias, hand hem, oversized shawl collar kimono.",
-      "Two fittings, ten to fourteen days from confirmation."
-    ]
-  },
-  {
-    "title": "The Reception Look",
-    "archetype": "brides",
-    "priceFromNgn": null,
-    "image": "/pins/pin-09.jpg",
-    "featured": false,
-    "story": [
-      "The second look for the bride who does not want to leave the dance floor.",
-      "Cocktail length, hand bead at the hem, removable cape detail."
-    ]
-  },
-  {
-    "title": "The Family Aso Ebi",
-    "archetype": "aso-ebi",
-    "priceFromNgn": null,
-    "image": "/pins/pin-10.jpg",
-    "featured": false,
-    "story": [
-      "The set Beulah builds for mothers and aunties when they refuse to be styled like the bridesmaids.",
-      "Adjustable across body shapes; the silhouette holds."
-    ]
-  },
-  {
-    "title": "The Executive Cream",
+    "title": "Black Peplum Top and Sun Yellow Palazzo for the Bold Boardroom",
     "archetype": "boss-ladies",
-    "priceFromNgn": null,
-    "image": "/pins/pin-11.jpg",
+    "priceFromNgn": 56000,
+    "image": "/products/black-peplum-top-and-sun-yellow-palazzo-for-the-bold-boardroom.jpg",
+    "images": [
+      "/products/black-peplum-top-and-sun-yellow-palazzo-for-the-bold-boardroom.jpg"
+    ],
     "featured": false,
     "story": [
-      "Hand picked cream for boardroom lighting; the cut sits clean over the hip without ever clinging.",
-      "Worn over a navy shell or a silk camisole, two rooms, two outcomes."
+      "A management consultant who closes accounts at the partner level wanted something the room would still remember at the elevator ride down. Most of her competition was already wearing the navy and the grey. She did not want to be remembered for fabric quality. She wanted to be remembered.",
+      "So we paired a black peplum top with a strict button row at the side, six buttons in a vertical line that read as structure close up and as discipline from across the room. The peplum hem hits her hips like a sentence break, controlled, intentional. The sun yellow palazzo is full, pleated, cut from a weighted crepe so it falls clean from the natural waist instead of ballooning at the knee. The black holds her presence; the yellow makes the room turn.",
+      "She wore it on the day she pitched a forty million Naira annual retainer and walked out with the agreement signed by the close of business. The client remembered the palazzo six weeks later when he introduced her to his board. That is the colour working."
     ]
   },
   {
-    "title": "The Velvet Hour",
-    "archetype": "soft-life",
-    "priceFromNgn": null,
-    "image": "/pins/pin-12.jpg",
-    "featured": false,
-    "story": [
-      "Crushed velvet midi with a soft drape neckline.",
-      "Designed for the dinner where you arrive last and the room turns."
-    ]
-  },
-  {
-    "title": "The Ivory Bride",
-    "archetype": "brides",
-    "priceFromNgn": null,
-    "image": "/pins/pin-13.jpg",
-    "featured": false,
-    "story": [
-      "The civil ceremony piece for the bride who wants the gown without the train.",
-      "Hand draped, lined silk, cut to be photographed seated and standing."
-    ]
-  },
-  {
-    "title": "The Burgundy Aso Ebi",
-    "archetype": "aso-ebi",
-    "priceFromNgn": null,
-    "image": "/pins/pin-14.jpg",
-    "featured": false,
-    "story": [
-      "Deep burgundy with a hand worked gold motif at the cuff.",
-      "The set most often worn to traditional engagements that turn into receptions."
-    ]
-  },
-  {
-    "title": "The Power Two-Piece",
+    "title": "Burgundy Blazer Set for Stylish Corporate Professional",
     "archetype": "boss-ladies",
-    "priceFromNgn": null,
-    "image": "/pins/pin-15.jpg",
+    "priceFromNgn": 123000,
+    "image": "/products/burgundy-blazer-set-for-stylish-corporate-professional.jpg",
+    "images": [
+      "/products/burgundy-blazer-set-for-stylish-corporate-professional.jpg",
+      "/products/burgundy-blazer-set-for-stylish-corporate-professional-2.jpg",
+      "/products/burgundy-blazer-set-for-stylish-corporate-professional-3.jpg",
+      "/products/burgundy-blazer-set-for-stylish-corporate-professional-4.jpg",
+      "/products/burgundy-blazer-set-for-stylish-corporate-professional-5.jpg"
+    ],
     "featured": false,
     "story": [
-      "Hand tailored two piece for the woman whose presence enters the room before her name.",
-      "Lined throughout, cut to sit clean across a four hour meeting."
+      "A Head of Legal at one of the banks needed something for the year end strategy session that did not photograph like every other blazer in the room. The board meeting starts at nine. She walks in last, after the partners. The room is always wallpapered in navy and dark grey.",
+      "So I built this one in burgundy, not because burgundy is interesting in isolation, but because most rooms in Lagos are dressed in navy, and burgundy is the easiest colour for a room to remember her in. The blazer is single button, lightly fitted through the waist, with a notched lapel narrow enough to read as modern and wide enough to read as serious. The trousers are wide and straight, the colour matched within a half shade, the seam pressed sharp so the line travels uninterrupted from shoulder to shoe. The silhouette is unapologetic.",
+      "By the third presentation that week, the colour was the only thing two of the partners independently remembered when they were asked to summarise the meeting. The agenda did not move. The room did. She has reordered the same cut twice, in forest green and in a deep teal she calls Tuesday."
     ]
   },
   {
-    "title": "The Linen Hour",
-    "archetype": "soft-life",
-    "priceFromNgn": null,
-    "image": "/pins/pin-16.jpg",
+    "title": "Burnt Orange Pearl Hem Top and Trouser Set for the Statement Executive",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 87000,
+    "image": "/products/burnt-orange-pearl-hem-top-and-trouser-set-for-the-statement-executive.jpg",
+    "images": [
+      "/products/burnt-orange-pearl-hem-top-and-trouser-set-for-the-statement-executive.jpg"
+    ],
     "featured": false,
     "story": [
-      "Lagos linen, hand finished, cut for the heat without losing the line.",
-      "Worn unbelted to brunch; belted to a meeting; tied at the waist for everything else."
+      "Burnt orange because most Lagos executive wear lives in the navy, black and grey safety net, and the executives who break that net get remembered. The client who commissioned this was running for a board seat on the back of her third year as the most cited woman in her sector. She did not need to be interesting. She needed to be unforgettable.",
+      "The mock neck holds the line of her face and frames it without competing for the attention. The hem of the top is studded with small pearls, hand sewn in a scattered constellation so the eye stops at her waist, which is the part of the silhouette people remember even when they cannot tell you why. The matching trousers complete the line. We built this in a heavier crepe so it photographs as a suit, not as separates, which matters on a stage and on LinkedIn.",
+      "She wore it to the campaign launch. The press photograph that ran in three papers the next morning has been her LinkedIn cover since. She won the seat."
     ]
   },
   {
-    "title": "The Trad",
+    "title": "Champagne Bow Peplum and Forest Green Trouser for the Power Lunch",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 63000,
+    "image": "/products/champagne-bow-peplum-and-forest-green-trouser-for-the-power-lunch.jpg",
+    "images": [
+      "/products/champagne-bow-peplum-and-forest-green-trouser-for-the-power-lunch.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "I drafted this for a partner at one of the law firms who entertains clients at lunch three times a week. She told me she wanted to look approachable but not soft, expensive but not loud, and she did not have the energy to think about it every morning.",
+      "The champagne peplum carries a single bow at the shoulder, hand tied in the same fabric as the bodice so it sits flat and does not flap when she lifts her fork. The green button row at the side reads as detail close up and as discipline from across the room, which is the trick we use when we want a client to look composed in a photograph taken at any distance. The forest green trousers ground the palette and let the champagne hold the eye.",
+      "The bow is the only soft thing on the look, and that is the point. She wears this on the days she is closing rather than presenting, which she explained once over coffee as the difference between speaking and listening. The look listens well."
+    ]
+  },
+  {
+    "title": "Chartreuse Cowl Drape Top and Espresso Trouser for the Confident Executive",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 56000,
+    "image": "/products/chartreuse-cowl-drape-top-and-espresso-trouser-for-the-confident-executive.jpg",
+    "images": [
+      "/products/chartreuse-cowl-drape-top-and-espresso-trouser-for-the-confident-executive.jpg"
+    ],
+    "featured": true,
+    "story": [
+      "This is the look that became the most saved Dé-light piece on Pinterest. The first one was built for a Head of Marketing who told me she was tired of being told she dressed too conservatively. She did not dress too conservatively. She dressed too carefully. There is a difference, and you fix it with colour, not with cut.",
+      "The chartreuse cowl drape gathers across the chest and waist, asymmetric and intentional, the fabric falling from the shoulder into a soft cape line on one side and a fitted side seam on the other. The cowl is generous enough to hold weight without dragging the neckline down, which is the failure mode of most drape tops at this price point. The espresso trouser is full leg, deep, and lets the yellow speak.",
+      "When she walked into her quarterly review in this, no one mentioned the wardrobe. Three women asked her about it after. By the next quarter, the look had been pinned six hundred times. By the quarter after that, it was the most saved Dé-light pin in our archive. It still is."
+    ]
+  },
+  {
+    "title": "Ivory Tailored Blazer Suit for the Corner Office",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 98700,
+    "image": "/products/ivory-tailored-blazer-suit-for-the-corner-office.jpg",
+    "images": [
+      "/products/ivory-tailored-blazer-suit-for-the-corner-office.jpg"
+    ],
+    "featured": true,
+    "story": [
+      "A Director took the corner office at her firm last March and asked me for a wardrobe she could rotate without thinking on Monday mornings. We started with this suit.",
+      "Ivory because most of her peers wear black or navy and she wanted to be the woman the partners noticed before they noticed the agenda. The blazer is hand tailored in a wool silk blend, soft enough to drape from the shoulder without shoulder pads doing the work, structured enough to hold its shape through a twelve hour day. The trousers are straight and full to the floor with a deep hem that will let her recut them in two years without rebuilding the suit. We lined the jacket in pale gold silk, an internal signal nobody else can see, which is the kind of detail that matters more than it should.",
+      "She has worn it to seventeen meetings since pickup. Three of them ended with a yes she had been chasing for months. She told me afterwards that the suit gave her the patience to wait the meetings out, which is the part of the wardrobe people rarely talk about."
+    ]
+  },
+  {
+    "title": "Jewel Floral Jacquard Puff Sleeve Top and Cream Trouser for the Garden Boardroom",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 39000,
+    "image": "/products/jewel-floral-jacquard-puff-sleeve-top-and-cream-trouser-for-the-garden-boardroom.jpg",
+    "images": [
+      "/products/jewel-floral-jacquard-puff-sleeve-top-and-cream-trouser-for-the-garden-boardroom.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "A founder who runs board meetings in her Ikoyi garden wanted something that would translate from her own home to a hotel ballroom without changing. The garden boardroom is a real thing in Lagos at her tier; the founder calls the meeting on her own terms, in her own house, and the agenda happens between the small chops and the second pour of palm wine.",
+      "The jacquard floral is jewel tones, hand woven, set on a sweetheart neckline with full puff sleeves at the shoulder that hold their shape through three hours of gesturing. The bodice is corseted internally so she could host without thinking about her own silhouette. The cream wide leg trouser anchors the look and lets the print do the talking.",
+      "The whole piece reads as quietly expensive because it is. She wore it to a quarterly with three investors who had been on the fence about her Series A. They left having signed. She told me the look did not close the round. It just made the conversation easier. That is the most honest thing a client has ever said to me about a wardrobe."
+    ]
+  },
+  {
+    "title": "Navy Tailored Blazer Suit for the Boardroom Standard",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 107000,
+    "image": "/products/navy-tailored-blazer-suit-for-the-boardroom-standard.jpg",
+    "images": [
+      "/products/navy-tailored-blazer-suit-for-the-boardroom-standard.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "Every boss lady needs one suit she can wear when she has not slept and still look like she is running the meeting. This is that suit.",
+      "Navy wool blend, single breasted, the waist cut to nip without strangling, the trousers full and flat fronted with a clean break at the shoe. The lapel is modest, the shoulder soft, the lining a quiet navy silk so the jacket comes off smoothly when she sits down to a long lunch. We sized it for a CFO who needed to fly to three cities in four days and present quarterly numbers in each one. The suit packed flat, hung overnight, and walked into the next room looking like it had been waiting for her.",
+      "The suit went on first that week and came off last. She wore it on the morning she announced her resignation and on the afternoon she signed the contract for the next role. She told me she does not own another piece of clothing that has carried her through two of those days back to back. The suit is the wardrobe."
+    ]
+  },
+  {
+    "title": "Navy Zip Front Peplum Vest for the Smart Casual Friday",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 23000,
+    "image": "/products/navy-zip-front-peplum-vest-for-the-smart-casual-friday.jpg",
+    "images": [
+      "/products/navy-zip-front-peplum-vest-for-the-smart-casual-friday.jpg",
+      "/products/navy-zip-front-peplum-vest-for-the-smart-casual-friday-2.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "A consulting partner asked me for one piece she could throw over jeans on Friday and over a slip dress on Saturday. The brief was the kind of brief I wish more clients walked in with: name two days, name two outfits, build one thing.",
+      "The navy vest is heavy crepe, fits close through the rib, zips up the centre front with a hidden metal zip we ran in by hand so it stays smooth across the bust. It releases into a soft peplum at the hip with elastic at the back so it actually fits a real waist, not a sample one. The shoulder is cut clean, no padding, so the vest reads as soft tailoring rather than as office wear trying to be casual.",
+      "She wears it to the office on Friday with high waisted dark wash denim and a loafer, and to drinks in the evening with the same denim and a stiletto. The vest does both. The denim does the rest. She has been in the vest forty days out of the last year, which she counted, which I did not ask her to do."
+    ]
+  },
+  {
+    "title": "Olive Embroidered Vest and Espresso Trouser for the Working Wardrobe",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 39000,
+    "image": "/products/olive-embroidered-vest-and-espresso-trouser-for-the-working-wardrobe.jpg",
+    "images": [
+      "/products/olive-embroidered-vest-and-espresso-trouser-for-the-working-wardrobe.jpg",
+      "/products/olive-embroidered-vest-and-espresso-trouser-for-the-working-wardrobe-2.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "An accountant who travels between Lagos and Abuja three weeks of every four asked me to build her something she could pack in a carry on and wear three different ways. The brief was simple: do not crease, do not need ironing, do not fall apart at the airport.",
+      "The vest is olive twill, hand embroidered at the closure with a soft scroll she would not see unless she looked, the kind of detail you build for the woman, not for the photograph. It is lined in cotton voile so it sits clean against skin in Lagos heat and against a thermal in an Abuja boardroom in harmattan. The trousers are espresso wide leg, the colour you do not have to fuss with at four in the morning at the airport because it forgives everything.",
+      "She wears this with a white blouse on flights, bare with heels at meetings, and with a navy long sleeve underneath at dinners that run late. The vest has been in her travel rotation for fourteen months. She reordered the trouser in charcoal at month nine."
+    ]
+  },
+  {
+    "title": "Olive Peplum and Cream Trouser Set for the Senior Manager's Day",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 42000,
+    "image": "/products/olive-peplum-and-cream-trouser-set-for-the-senior-managers-day.jpg",
+    "images": [
+      "/products/olive-peplum-and-cream-trouser-set-for-the-senior-managers-day.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The senior manager problem: too senior for the entry level wardrobe, not senior enough yet to wear the partner's gravitas. The wardrobe lives in that exact gap for a decade, and most women dress around it by buying more, not by building better.",
+      "So we built her this. Olive V neck peplum, long sleeves, a side gather that softens without flattening, the colour deep enough to read as serious and warm enough to read as her. Cream wide leg trousers because she wanted the trousers to do the height work for her, which is what wide leg trousers actually do when they are cut properly and pressed sharp.",
+      "The look is fluent corporate Lagos in a colour palette that lets her be the person, not the role. She wears it on the days she is presenting to the leadership team but is not on the agenda herself, which is the kind of day a senior manager spends most of her week in. She told me, six weeks after pickup, that her director had stopped asking her to take notes."
+    ]
+  },
+  {
+    "title": "Olive Peplum and Tulle Skirt for the After Hours Gala",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 75000,
+    "image": "/products/olive-peplum-and-tulle-skirt-for-the-after-hours-gala.jpg",
+    "images": [
+      "/products/olive-peplum-and-tulle-skirt-for-the-after-hours-gala.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The same client who buys my olive peplum for work asked for a version she could wear to the company gala without changing accessories. She had three black tie events in a quarter and was tired of the floor length dress, the heel, the earring, the bag, the woman she became when she wore them.",
+      "So we kept the peplum she already wore on Wednesdays and swapped the trousers for an olive tulle skirt with enough volume to read across the ballroom but not enough to need a separate car. The bodice carries small embellishments at the hip that catch the light when she turns. The skirt is layered in three depths, weighted at the hem so it stays where she sets it when she sits to dinner. The neckline did not change. The earring she wears to work is the earring she wore to the gala.",
+      "She wore this to her firm's twentieth anniversary dinner. The photograph went up on the company LinkedIn the next morning. Two of her colleagues thought she had changed her hair."
+    ]
+  },
+  {
+    "title": "Red Brocade Corset Gown for the Awards Night",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 115000,
+    "image": "/products/red-brocade-corset-gown-for-the-awards-night.jpg",
+    "images": [
+      "/products/red-brocade-corset-gown-for-the-awards-night.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "Red on red on red. I built this for a CEO who hosts the annual recognition night at her firm. She told me, the first time we met, that she was tired of looking like she could not afford to be the host of her own event.",
+      "So we built the gown to host. The corset is hand mounted floral brocade in red and antique gold, fitted close through the rib with twenty bones so she could stand for two hours of speeches without finding the nearest wall. The neckline is single shoulder. The skirt is heavy tulle, three layers deep, weighted at the hem so it stayed where she put it when she crossed the stage. We added a hidden pocket at the hip seam, large enough for her phone and the index cards she refused to read from but kept anyway.",
+      "By the time she handed out the awards, no one was looking at the awards. The whole evening was just her, walking from table to table, in red. The photographs ran on the company website for the rest of the financial year."
+    ]
+  },
+  {
+    "title": "Royal Blue Asymmetric Peplum and Cream Trouser Set for the Power Brief",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 37000,
+    "image": "/products/royal-blue-asymmetric-peplum-and-cream-trouser-set-for-the-power-brief.jpg",
+    "images": [
+      "/products/royal-blue-asymmetric-peplum-and-cream-trouser-set-for-the-power-brief.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "I built this for an architect who pitches to developers in rooms where almost every face is male and most of them have already decided whether they trust her before the slides open. She told me she did not want to be loud. She wanted to be unmissable.",
+      "The royal blue holds attention without working too hard at it. The asymmetric peplum hem cuts the silhouette like a building she designed, not like a top off a rack: a clean diagonal from hip to thigh that reads as architecture, not as fashion. Long sleeves, mock neck, the bodice cut close to the rib so it does not drift when she gestures at the screen. The cream trousers ground the look and let the blue do the work.",
+      "She wore it to a final pitch in March. The room asked technical questions for forty minutes and then signed within the week. The project broke ground in May. She has reordered the same cut in a deeper ink blue, which is what she wears now to investor presentations."
+    ]
+  },
+  {
+    "title": "Sky Blue Embroidered Vest and Rust Trouser Set for the Quiet Tuesday",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 39000,
+    "image": "/products/sky-blue-embroidered-vest-and-rust-trouser-set-for-the-quiet-tuesday.jpg",
+    "images": [
+      "/products/sky-blue-embroidered-vest-and-rust-trouser-set-for-the-quiet-tuesday.jpg",
+      "/products/sky-blue-embroidered-vest-and-rust-trouser-set-for-the-quiet-tuesday-2.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "Most Tuesdays at the executive level look the same: a meeting that could have been an email, a coffee with someone who wants something, a quiet hour of actual work, and a one to one that runs over. The wardrobe for that day should not work as hard as Monday's did, and should leave something in the tank for the rest of the week.",
+      "A client asked me for something that would make a Tuesday feel like a soft answer to the Monday she had survived. Sky blue vest, sleeveless, with a hand embroidered scroll detail along the front opening, the only flourish on the look. The vest is lined so it reads as a top rather than as a layer, and it skims rather than fits, which is the silhouette mid week wants. Rust wide leg trouser, the colour you do not have to think about, paired with a soft leather loafer she already owned.",
+      "She wears this when she has to say no without explaining. The vest does most of the explaining for her."
+    ]
+  },
+  {
+    "title": "White Blazer Set for Dinner and Awards",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 115000,
+    "image": "/products/white-blazer-set-for-dinner-and-awards.jpg",
+    "images": [
+      "/products/white-blazer-set-for-dinner-and-awards.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "This is the suit I would wear if I had an award to collect. Cream white wool blend, soft enough to sit through a four hour ceremony, structured enough to walk to the stage like it was your idea.",
+      "The mandarin collar holds the line of her neck and gives the front of the jacket a single, vertical conversation. The pearl buttons march down the front with the precision of a sentence that has been edited. The origami pleat at the waist is the one place I let the suit breathe; everything above and below it is strict. Trousers are tailored straight, cut from the same bolt of wool blend so there is no half shade flicker when the cameras catch her between the table and the podium.",
+      "The first woman who wore it was a banking executive collecting an industry award she had quietly campaigned for over two years. She wanted to look like she had always known the call was coming. The suit did that. The morning after the ceremony, three women at her firm asked the publicist who made it. Two of them are now in fittings with me."
+    ]
+  },
+  {
+    "title": "White Side Button Top and Cobalt Palazzo for the Confident Boardroom",
+    "archetype": "boss-ladies",
+    "priceFromNgn": 56000,
+    "image": "/products/white-side-button-top-and-cobalt-palazzo-for-the-confident-boardroom.jpg",
+    "images": [
+      "/products/white-side-button-top-and-cobalt-palazzo-for-the-confident-boardroom.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "I built this for a Director who chairs three boards and refuses to wear suits. She finds them ageing. She is not wrong. There is a way the corporate suit ages a woman in Lagos that we do not talk about enough; it can flatten a personality into a role even when she walks into the room with a full one.",
+      "The white top has six small buttons set asymmetrically down the side, a quiet structural detail that holds the eye at her waist instead of at her chest, which is the part of the silhouette most women want directed when they chair a table of men. The cobalt palazzo is pleated, generous, and falls from the natural waist with weight. The trousers move when she does, which matters when she stands up to walk to the projector at the front of the room.",
+      "She walked into a quarterly board the week after pickup, and her chair started the meeting with: you look like the future. He meant it as a compliment. She took it as a brief. She has reordered the trouser in deep teal."
+    ]
+  },
+  {
+    "title": "Ivory Tailored Blazer Suit for the Civil Wedding Bride",
     "archetype": "brides",
-    "priceFromNgn": null,
-    "image": "/pins/pin-17.jpg",
+    "priceFromNgn": 187000,
+    "image": "/products/ivory-tailored-blazer-suit-for-the-civil-wedding-bride.jpg",
+    "images": [
+      "/products/ivory-tailored-blazer-suit-for-the-civil-wedding-bride.jpg"
+    ],
     "featured": false,
     "story": [
-      "The traditional engagement look for the bride who does not want to be wearing the same set as her cousin.",
-      "Made to commission; six to ten weeks from deposit."
+      "She did not want a dress. She wanted to walk into the registry the way she walked into work, only softer. So we built her a suit, not a costume of one.",
+      "The blazer is ivory wool blend with a faint silk shimmer that only shows in the registrar's flash photography. It is lightly nipped at the waist, single button, with hand bound buttonholes you can only see if you are close enough to comment on them. The lapel is narrow, the shoulder pad minimal, the lining a soft cream silk so the sleeve falls clean without help. The trousers are tailored straight to the floor with a clean break at the shoe, a deep hem that lets her grow into them for a decade.",
+      "The whole suit was built around her ribs, not her hips, which is what tailoring on a real woman actually means. Her mother cried, not at the registry, at the fitting. She said her daughter looked like she had decided who she was years ago. That is the suit working."
     ]
   },
   {
-    "title": "The Rose Build",
-    "archetype": "soft-life",
-    "priceFromNgn": null,
-    "image": "/pins/pin-18.jpg",
+    "title": "Pearl Bodice Lace Sleeve Mermaid Gown for the Classic White Wedding",
+    "archetype": "brides",
+    "priceFromNgn": 237000,
+    "image": "/products/pearl-bodice-lace-sleeve-mermaid-gown-for-the-classic-white-wedding.jpg",
+    "images": [
+      "/products/pearl-bodice-lace-sleeve-mermaid-gown-for-the-classic-white-wedding.jpg"
+    ],
+    "featured": true,
+    "story": [
+      "She brought me a single image at the first fitting: her grandmother's wedding photograph from 1962. The grandmother had been buried with the dress, which she only mentioned an hour into the conversation. Everything we built after that started with the photograph.",
+      "The lace at the collar and the sleeves is a French Chantilly, set high and close so the pearls at the bodice are framed, not crowded. The pearls are hand sewn in a scattered pattern, denser at the centre and quieter towards the hip, the way pearls actually fall on a body when there is no machine forcing them into a grid. The bodice closes with a corset back hidden under a panel of satin so the line stays clean in photographs. The skirt is silk satin, cut narrow through the hip and released into a fishtail train so she could walk the aisle slowly and the gown would arrive a second after she did.",
+      "The cathedral veil is hand finished with a single line of pearls along the bottom edge, the only place we let the pearl detail leave the bodice. At the reception, her father asked her to dance the way he had danced with her grandmother. She wore the gown to do it."
+    ]
+  },
+  {
+    "title": "Pearl Button Mandarin Collar Suit for the Modern Civil Bride",
+    "archetype": "brides",
+    "priceFromNgn": 198000,
+    "image": "/products/pearl-button-mandarin-collar-suit-for-the-modern-civil-bride.jpg",
+    "images": [
+      "/products/pearl-button-mandarin-collar-suit-for-the-modern-civil-bride.jpg"
+    ],
     "featured": false,
     "story": [
-      "Dusty rose, lace bodice, soft chiffon skirt.",
-      "The piece for the brunch that becomes a launch announcement."
+      "The bride told me at the first fitting that she wanted less wedding dress, more arrival. She had three civil ceremonies on her calendar that year: two of them her own, in two countries, and one a friend's. The suit had to travel.",
+      "The mandarin collar holds the line of her neck and gives the pearl buttons a starting point. The pearls run from collar to waist, ten in total, hand sewn, so the eye stops where she wants it to stop. The pleated origami at the hip is the only thing on the suit that is not strict, a deliberate softness in a piece that is otherwise architectural. The trousers are wide leg, deep cream, with a centre crease pressed sharp. We built it in a heavy crepe so it photographs as a suit, not as separates.",
+      "The dress code on her invitation said cocktail. The suit ignored it. She walked into the registry, and her husband forgot his vows for a sentence and a half. The registrar waited him out. The photograph from that pause is the one she sent her mother."
+    ]
+  },
+  {
+    "title": "Red Brocade Corset Gown for the Traditional Bride",
+    "archetype": "brides",
+    "priceFromNgn": 115000,
+    "image": "/products/red-brocade-corset-gown-for-the-traditional-bride.jpg",
+    "images": [
+      "/products/red-brocade-corset-gown-for-the-traditional-bride.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "Most traditional brides come to me wanting to honour the family without disappearing into a room of red. So we built this gown to do both.",
+      "The corset bodice carries hand mounted brocade in red and antique gold, the colour the elders will recognise and the metallic the camera will not let go of. The corset itself is constructed with twenty hand sewn bones, lined in silk, so she could wear it from the morning rites through the dinner without taking off her own ribs. The skirt is generous because the day is long, the tulle layered in three depths so it moves with her instead of after her. She wanted to sit, to dance, to greet aunties without the gown protesting. Underneath the tulle, a satin slip with side slits we hid in the seams so she could lift the skirt when nobody was looking.",
+      "The night ended with her still in it. Her mother in law took the dress home to keep. That is rare. The corset is currently in storage in Ikoyi, waiting for the daughter."
+    ]
+  },
+  {
+    "title": "Apple Green Co-ord Shirt and Trouser Set for the City Stroll",
+    "archetype": "soft-life",
+    "priceFromNgn": 39000,
+    "image": "/products/apple-green-co-ord-shirt-and-trouser-set-for-the-city-stroll.jpg",
+    "images": [
+      "/products/apple-green-co-ord-shirt-and-trouser-set-for-the-city-stroll.jpg"
+    ],
+    "featured": true,
+    "story": [
+      "Apple green, head to toe, because the soft life is allowed to be loud sometimes. A client who had just sold her business asked for a piece she could wear to a long Saturday in Victoria Island, brunch to bookshop to dinner, without changing. She wanted to feel twenty four again and look thirty five, which is the dressing problem of a woman who has just closed a chapter and is not quite ready to open the next one.",
+      "The shirt is boxy and crisp, cropped at the natural waist with a small chest pocket and a collar wide enough to read on a video call. The wide leg trouser carries a sheer panel detail at the knee, set into the side seam, which catches sun when she walks and stays invisible when she sits. Tonal stitching, hidden side pocket on the trouser, deep hem.",
+      "She told me the first time she wore it, a stranger in a coffee shop on Akin Adesola asked who made it. So now you know. She has worn it five Saturdays in a row. Her husband has stopped asking what she is doing for the day."
+    ]
+  },
+  {
+    "title": "Black Peplum Top and Sun Yellow Palazzo for the Brunch in Lekki",
+    "archetype": "soft-life",
+    "priceFromNgn": 56000,
+    "image": "/products/black-peplum-top-and-sun-yellow-palazzo-for-the-brunch-in-lekki.jpg",
+    "images": [
+      "/products/black-peplum-top-and-sun-yellow-palazzo-for-the-brunch-in-lekki.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The same look the executives wear to the bold boardroom finds a different life on Sunday. The boardroom version is structured, controlled, photographed for LinkedIn. The Sunday version is the same fabric, the same line, and a different woman wearing them.",
+      "The black peplum sharpens the waist; the sun yellow palazzo softens the rest. We cut the Sunday version in a lighter weight crepe so the palazzo moves more freely and the peplum sits with less structure at the hip, which is what a Sunday silhouette needs. The button row is still there, six down the side, but the buttons are matte instead of polished, the kind of detail nobody notices until they do.",
+      "A client of mine wears this to brunch at her usual spot in Lekki on the second Sunday of every month. Her friends recognise the table by the trousers from across the restaurant. That is the kind of recognition the soft life is for: not the room turning, the room knowing. The waiters know what she is drinking. The hostess knows where she is sitting. The trousers do the introduction."
+    ]
+  },
+  {
+    "title": "Burgundy Short Sleeve Peplum and Cream Trouser for the Off Duty Executive",
+    "archetype": "soft-life",
+    "priceFromNgn": 57000,
+    "image": "/products/burgundy-short-sleeve-peplum-and-cream-trouser-for-the-off-duty-executive.jpg",
+    "images": [
+      "/products/burgundy-short-sleeve-peplum-and-cream-trouser-for-the-off-duty-executive.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The executive does not stop being the executive on Saturday. She just relaxes the shoulders. So I built this for the woman who wants the weekend to feel like her, but quieter.",
+      "Burgundy short sleeve peplum, side ruched, the cleanest line on the body, cut in a fluid jersey so it sits close without holding her hostage. The neckline is a soft scoop, deep enough to read as off duty, modest enough that she does not need to think about it when she leans in to lift a niece. The peplum hem is short, cut at the high hip so the trouser does most of the silhouette work. Cream wide leg trouser, deep break at the shoe, hem heavy enough to not flap in a Lagos breeze.",
+      "She wears this to her mother's house on Saturdays. Her mother always says she is overdressed. She always wears it anyway. Her mother also keeps asking who tailors for her, which is the highest compliment a Lagos mother can pay to another woman's clothes."
+    ]
+  },
+  {
+    "title": "Chartreuse Drape Top and Espresso Trouser for the Slow Sunday",
+    "archetype": "soft-life",
+    "priceFromNgn": 65000,
+    "image": "/products/chartreuse-drape-top-and-espresso-trouser-for-the-slow-sunday.jpg",
+    "images": [
+      "/products/chartreuse-drape-top-and-espresso-trouser-for-the-slow-sunday.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The Pinterest hero piece, on a slower day. A client asked for the same chartreuse cowl drape I had built her for work, but in a lighter weight, easier to layer with a robe at home or with sandals on a long Sunday brunch. She wore the work version twice a week. She wanted a softer version for the version of herself she liked better.",
+      "So we built her a second one in viscose. The drape is the same, the cowl is the same, but the weight of the fabric is half the work piece and the line sits looser at the hip. The trouser is espresso wide leg in the same fluid fabric, cut to read as one piece with the top when she stands in front of a mirror without trying. We finished the seams in french bound seams so the top can be worn inside out for a long weekend on the boat if she does not feel like packing twice.",
+      "She wears this to read the paper in. I am told the paper still gets read."
+    ]
+  },
+  {
+    "title": "Jewel Floral Jacquard Puff Sleeve Top for the Garden Tea",
+    "archetype": "soft-life",
+    "priceFromNgn": 47000,
+    "image": "/products/jewel-floral-jacquard-puff-sleeve-top-for-the-garden-tea.jpg",
+    "images": [
+      "/products/jewel-floral-jacquard-puff-sleeve-top-for-the-garden-tea.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The boardroom version of this top showed up in a client's garden tea three months after she had first worn it to a Series A meeting. So we built her a second one, same jewel jacquard, looser at the waist, no peplum, no built in corset.",
+      "The garden version is for sitting. The bodice is straight cut from the bust to the hip, no shaping, so she could host an afternoon of small chops and champagne without monitoring her own silhouette. The puff sleeve is the same shape but cut from a lighter lining so it deflates a little after the second hour, which is the way puff sleeves should age. The jacquard floral catches afternoon light differently from morning light, which we did not plan for but she did, in her own garden, in her own way.",
+      "A friend asked her where she got it. She told her. By the next month, three of her friends were in fittings with me. The garden version is the entry point to the rest of the wardrobe. The boardroom version is what they buy six months later."
+    ]
+  },
+  {
+    "title": "Navy Zip Front Vest and Denim for the Easy Saturday",
+    "archetype": "soft-life",
+    "priceFromNgn": 23000,
+    "image": "/products/navy-zip-front-vest-and-denim-for-the-easy-saturday.jpg",
+    "images": [
+      "/products/navy-zip-front-vest-and-denim-for-the-easy-saturday.jpg",
+      "/products/navy-zip-front-vest-and-denim-for-the-easy-saturday-2.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The boss lady version of this vest, on her day off. A client wears the office version with crepe trousers Monday to Thursday, and this same vest with a high waisted dark wash denim on Saturday. The transformation is in the trouser, not the vest, which is the cheapest kind of wardrobe building there is and the kind more women should do.",
+      "The zip front gives her one button push when she is rushing for school pick up or for the airport. The peplum holds her waist without thinking about it. The vest is cut close enough to read as soft tailoring and loose enough to layer a thin merino under it when she is travelling. The denim does the rest of the outfit's job: it ages her down without trying, which is the dressing problem of the woman who looks like she runs a company on weekdays and would like to look like a person on Saturdays.",
+      "She told me the denim makes her feel twenty four. The vest makes her feel like the woman who runs the company. The fact that both are true at the same time is the entire point."
+    ]
+  },
+  {
+    "title": "Sunset Abstract Print Bell Sleeve Midi Dress for the Sunday Brunch",
+    "archetype": "soft-life",
+    "priceFromNgn": 42700,
+    "image": "/products/sunset-abstract-print-bell-sleeve-midi-dress-for-the-sunday-brunch.jpg",
+    "images": [
+      "/products/sunset-abstract-print-bell-sleeve-midi-dress-for-the-sunday-brunch.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "A bell sleeve midi in a sunset abstract print, mustard, deep green, navy brushstrokes on cream. I built this for a client who refuses to wear black to church on Sunday. She told me, the first time we met, that black felt like a verdict her mother had not yet pronounced.",
+      "The print reads as art from across a room and as paint up close, which is the way a good print works: it survives the long look. The bell sleeves are wide enough to swing when she lifts her hands in worship, narrow enough at the shoulder that she can wear a small handbag without fighting the cuff. The fit and flare cut moves the way she does. The skirt falls to mid calf, a length that reads as Sunday in Lagos and as Friday evening anywhere else.",
+      "She wears it to brunch after the service. The same dress survives both rooms without translation. Her pastor told her she always looked happy in colour. She told him she had bought it specifically not to be in black. He laughed. She has reordered the cut in a different print twice since."
+    ]
+  },
+  {
+    "title": "Sunset Print Sleeveless Peplum and Espresso Trouser for the Lazy Saturday",
+    "archetype": "soft-life",
+    "priceFromNgn": 38000,
+    "image": "/products/sunset-print-sleeveless-peplum-and-espresso-trouser-for-the-lazy-saturday.jpg",
+    "images": [
+      "/products/sunset-print-sleeveless-peplum-and-espresso-trouser-for-the-lazy-saturday.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The same sunset print, in a different shape, for a different day. A client asked me to make her one in this fabric after she saw it on a friend at a wedding. She did not want the same dress. She wanted the same fabric in something she could wear on a Saturday that did not feel like an event.",
+      "So we built a sleeveless peplum, ruched at the side, paired with an espresso wide leg trouser she already owned in her wardrobe rotation. The print does the talking; the silhouette stays calm. The bodice sits close through the rib with a single back zip; the peplum is gathered at the seam so it reads soft instead of structured. The trouser brings the look back to neutral so the print does not become the entire wardrobe.",
+      "It now lives in her Saturday rotation. She told me she wears it more than she wears jeans, which I did not expect, which is the way these things go. The next print we cut for her will probably arrive in the same shape. That is the compliment a stylist learns to read."
+    ]
+  },
+  {
+    "title": "White Side Button Top and Cobalt Palazzo for the Soft Life Sunday",
+    "archetype": "soft-life",
+    "priceFromNgn": 66000,
+    "image": "/products/white-side-button-top-and-cobalt-palazzo-for-the-soft-life-sunday.jpg",
+    "images": [
+      "/products/white-side-button-top-and-cobalt-palazzo-for-the-soft-life-sunday.jpg"
+    ],
+    "featured": false,
+    "story": [
+      "The boardroom version of this look, softened for Sunday. The boardroom version is crepe, fitted, photographed. The Sunday version is the same idea built in viscose, which is the cheapest design decision in a wardrobe and the one that translates a piece from one room to another.",
+      "The white side button top is the same crisp construction, six buttons set asymmetrically down the side, but in viscose instead of crepe, so it sits more relaxed at the waist and reads as a Sunday silhouette rather than a Wednesday one. The cobalt palazzo is the same pleated, generous trouser, cut from the same bolt of weighted crepe so the colour is identical when the two versions are photographed side by side, which a client of mine has now done for Instagram.",
+      "A client wears the boardroom version to work and the soft life version to her sister's birthday. Same idea, different intensity. Both photograph beautifully. She told me the soft version makes her sister jealous, which is the kind of feedback a stylist takes as a result."
     ]
   }
 ]

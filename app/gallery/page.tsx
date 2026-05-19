@@ -12,20 +12,20 @@ export const metadata: Metadata = {
     "Real women in real Dé-light pieces, and what they say about the build. Reviews and feedback from the Dé-light wardrobe.",
 };
 
-// Curated wall of Dé-light pieces on real women (the Pinterest catalogue).
+// Curated wall of Dé-light pieces on real women (the catalogue).
 const PHOTO_WALL = [
-  "/pins/pin-05.jpg",
-  "/pins/pin-01.jpg",
-  "/pins/pin-07.jpg",
-  "/pins/pin-10.jpg",
-  "/pins/pin-02.jpg",
-  "/pins/pin-14.jpg",
-  "/pins/pin-04.jpg",
-  "/pins/pin-16.jpg",
-  "/pins/pin-17.jpg",
-  "/pins/pin-12.jpg",
-  "/pins/pin-08.jpg",
-  "/pins/pin-15.jpg",
+  "/products/red-brocade-corset-gown-for-the-awards-night.jpg",
+  "/products/pearl-bodice-lace-sleeve-mermaid-gown-for-the-classic-white-wedding.jpg",
+  "/products/ivory-tailored-blazer-suit-for-the-corner-office.jpg",
+  "/products/chartreuse-cowl-drape-top-and-espresso-trouser-for-the-confident-executive.jpg",
+  "/products/apple-green-co-ord-shirt-and-trouser-set-for-the-city-stroll.jpg",
+  "/products/olive-peplum-and-tulle-set-for-the-polished-aso-ebi.jpg",
+  "/products/black-peplum-top-and-sun-yellow-palazzo-for-the-bold-boardroom.jpg",
+  "/products/burgundy-blazer-set-for-stylish-corporate-professional.jpg",
+  "/products/navy-tailored-blazer-suit-for-the-boardroom-standard.jpg",
+  "/products/white-side-button-top-and-cobalt-palazzo-for-the-confident-boardroom.jpg",
+  "/products/sunset-abstract-print-bell-sleeve-midi-dress-for-the-sunday-brunch.jpg",
+  "/products/royal-blue-asymmetric-peplum-and-cream-trouser-set-for-the-power-brief.jpg",
 ];
 
 export default async function GalleryPage() {

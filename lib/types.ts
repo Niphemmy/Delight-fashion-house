@@ -25,6 +25,7 @@ export interface Pin {
   title: string;
   slug: string;
   image: string;
+  images: string[];
   archetype: ArchetypeSlug;
   priceFromNgn: number | null;
   story: string[];

@@ -65,6 +65,7 @@ export const pins: Pin[] = (pinsJson as Array<{
   archetype: ArchetypeSlug;
   priceFromNgn: number | null;
   image: string;
+  images?: string[];
   featured?: boolean;
   story: string[];
 }>).map((p, i) => ({
@@ -72,6 +73,7 @@ export const pins: Pin[] = (pinsJson as Array<{
   title: p.title,
   slug: slugify(p.title),
   image: p.image,
+  images: p.images && p.images.length ? p.images : [p.image],
   archetype: p.archetype,
   priceFromNgn: p.priceFromNgn,
   story: p.story,
