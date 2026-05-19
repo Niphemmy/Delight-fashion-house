@@ -49,7 +49,7 @@ export default async function PinDetailPage({ params }: PinPageProps) {
             <span className="mx-2 opacity-50">·</span>
             <Link href="/fashion-inspo" className="hover:text-crimson">Fashion Inspo</Link>
             <span className="mx-2 opacity-50">·</span>
-            <Link href={`/fashion-inspo?archetype=${pin.archetype}`} className="hover:text-crimson capitalize">
+            <Link href={`/gallery/${pin.archetype}`} className="hover:text-crimson capitalize">
               {archetype?.name || pin.archetype}
             </Link>
             <span className="mx-2 opacity-50">·</span>
@@ -117,7 +117,7 @@ export default async function PinDetailPage({ params }: PinPageProps) {
                 <p className="eyebrow mb-2">More from this archetype</p>
                 <h2 className="display-3">More {archetype?.name || "looks"}</h2>
               </div>
-              <Link href={`/fashion-inspo?archetype=${pin.archetype}`} className="btn-link hidden sm:inline-flex">
+              <Link href={`/gallery/${pin.archetype}`} className="btn-link hidden sm:inline-flex">
                 See all
                 <span aria-hidden="true">→</span>
               </Link>
