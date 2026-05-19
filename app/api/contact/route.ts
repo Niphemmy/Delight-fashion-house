@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const beulahEmail = process.env.BEULAH_BUSINESS_EMAIL || "hello@delightfashionhouse.com";
+  const beulahEmail = process.env.BEULAH_BUSINESS_EMAIL || "delightfashionhouseth@gmail.com";
   const fromEmail = process.env.RESEND_FROM_EMAIL || beulahEmail;
 
   if (apiKey) {

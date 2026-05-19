@@ -5,6 +5,7 @@
     "name": "Tolulope A.",
     "titleAndOccasion": "Director of Operations, GTBank · Office wardrobe build",
     "archetype": "boss-ladies",
+    "rating": 5,
     "order": 100
   },
   {
@@ -13,6 +14,7 @@
     "name": "Chiamaka O.",
     "titleAndOccasion": "Bride, Lagos · Reception second look",
     "archetype": "brides",
+    "rating": 5,
     "order": 200
   },
   {
@@ -21,6 +23,52 @@
     "name": "Adaeze E.",
     "titleAndOccasion": "Partner, Lagos law firm · Return to work build",
     "archetype": "boss-ladies",
+    "rating": 5,
     "order": 300
+  },
+  {
+    "id": "t-4",
+    "quote": "I sent my measurements from London and did the fitting on a video call. The piece arrived and it sat like it had been cut on my body. I still do not know how she did that.",
+    "name": "Funmi K.",
+    "titleAndOccasion": "Diaspora client, United Kingdom · Aso ebi build",
+    "archetype": "aso-ebi",
+    "rating": 5,
+    "order": 400
+  },
+  {
+    "id": "t-5",
+    "quote": "Five sisters, five bodies, one aso ebi. We arrived and the photographer made us the cover. Beulah dressed the family as one image.",
+    "name": "Ngozi B.",
+    "titleAndOccasion": "Sister of the bride, Lagos · Family aso ebi",
+    "archetype": "aso-ebi",
+    "rating": 5,
+    "order": 500
+  },
+  {
+    "id": "t-6",
+    "quote": "I wanted pieces that did not shout. Everything she made me is quiet and expensive at the same time. People ask, and I just smile.",
+    "name": "Halima S.",
+    "titleAndOccasion": "Founder, Abuja · Soft life capsule",
+    "archetype": "soft-life",
+    "rating": 5,
+    "order": 600
+  },
+  {
+    "id": "t-7",
+    "quote": "She talked me out of the dress I thought I wanted and into the one I actually needed. That is the whole service. She sees you before you do.",
+    "name": "Patience U.",
+    "titleAndOccasion": "Bride, Port Harcourt · Traditional engagement",
+    "archetype": "brides",
+    "rating": 5,
+    "order": 700
+  },
+  {
+    "id": "t-8",
+    "quote": "Three years of buying from Beulah. Not one piece has left my wardrobe. That has never happened to me with any other designer.",
+    "name": "Zainab M.",
+    "titleAndOccasion": "Executive, Lagos · Repeat client",
+    "archetype": "boss-ladies",
+    "rating": 5,
+    "order": 800
   }
 ]

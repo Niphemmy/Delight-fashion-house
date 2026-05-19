@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Reveal, RevealStagger, RevealItem } from "@/components/animation/Reveal";
+import { StarRating } from "@/components/StarRating";
 import type { Testimonial } from "@/lib/types";
 
 export function Testimonials({ testimonials }: { testimonials: Testimonial[] }) {
@@ -24,7 +25,10 @@ export function Testimonials({ testimonials }: { testimonials: Testimonial[] }) 
                 transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                 className="bg-navy-soft/40 border border-gold/20 rounded-md p-7 lg:p-8 flex flex-col gap-5 h-full hover:border-gold/40 transition-colors"
               >
-                <Avatar name={t.name} />
+                <div className="flex items-center justify-between">
+                  <Avatar name={t.name} />
+                  <StarRating rating={t.rating} size={15} className="text-gold" />
+                </div>
                 <blockquote className="font-display text-lg lg:text-xl italic text-cream leading-snug">
                   <span className="text-gold text-2xl font-display leading-none mr-1" aria-hidden="true">"</span>
                   {t.quote}

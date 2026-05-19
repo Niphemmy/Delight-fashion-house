@@ -30,7 +30,7 @@ export default async function HomePage() {
       <ArchetypeCards archetypes={archetypes} />
       <FashionInspoTeaser pins={pins} />
       <MeetBeulah />
-      <Testimonials testimonials={testimonials} />
+      <Testimonials testimonials={testimonials.slice(0, 3)} />
       <LeadMagnet />
       <FinalCta />
     </>

@@ -8,10 +8,11 @@ import { track } from "@/lib/pixel";
 const SITEMAP = [
   { href: "/", label: "Home" },
   { href: "/fashion-inspo", label: "Fashion Inspo" },
-  { href: "/gallery/brides", label: "Brides Gallery" },
-  { href: "/gallery/aso-ebi", label: "Aso Ebi Gallery" },
-  { href: "/gallery/boss-ladies", label: "Boss Ladies Gallery" },
-  { href: "/gallery/soft-life", label: "Soft Life Gallery" },
+  { href: "/gallery/brides", label: "Brides" },
+  { href: "/gallery/aso-ebi", label: "Aso Ebi" },
+  { href: "/gallery/boss-ladies", label: "Boss Ladies" },
+  { href: "/gallery/soft-life", label: "Soft Life" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/our-story", label: "Our Story" },
   { href: "/contact", label: "Contact" },
 ];
@@ -60,7 +61,7 @@ export function Footer() {
                 <WaIcon className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/delight_fashion_house1/"
                 target="_blank"
                 rel="noopener"
                 className="text-cream-warm/70 hover:text-gold transition-colors"
@@ -69,7 +70,7 @@ export function Footer() {
                 <IgIcon className="w-5 h-5" />
               </a>
               <a
-                href="https://www.pinterest.com/fayinkabeulah/_created/"
+                href="https://www.pinterest.com/fayinkabeulah/"
                 target="_blank"
                 rel="noopener"
                 className="text-cream-warm/70 hover:text-gold transition-colors"
@@ -102,18 +103,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://www.pinterest.com/fayinkabeulah/_created/" target="_blank" rel="noopener" className="text-cream-warm/80 hover:text-gold">
+                <a href="https://www.pinterest.com/fayinkabeulah/" target="_blank" rel="noopener" className="text-cream-warm/80 hover:text-gold">
                   Pinterest
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener" className="text-cream-warm/80 hover:text-gold">
+                <a href="https://www.instagram.com/delight_fashion_house1/" target="_blank" rel="noopener" className="text-cream-warm/80 hover:text-gold">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@delightfashionhouse.com" className="text-cream-warm/80 hover:text-gold">
-                  Email
+                <a href="mailto:delightfashionhouseth@gmail.com" className="text-cream-warm/80 hover:text-gold">
+                  delightfashionhouseth@gmail.com
                 </a>
               </li>
             </ul>

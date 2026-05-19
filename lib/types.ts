@@ -40,6 +40,7 @@ export interface Testimonial {
   titleAndOccasion: string;
   photo?: string;
   archetype?: ArchetypeSlug;
+  rating: number;
   order: number;
 }
 
@@ -78,6 +79,7 @@ export interface SiteSettings {
   instagramUrl: string;
   pinterestHandle: string;
   pinterestUrl: string;
+  email: string;
   statYears: number;
   statSavesMonthly: number;
   leadMagnetTitle: string;

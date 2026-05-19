@@ -35,7 +35,7 @@ export function ContactTiles() {
 
       <RevealItem>
       <motion.a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/delight_fashion_house1/"
         target="_blank"
         rel="noopener"
         onClick={() => track("ScheduleConsult", { source: "contact-tile-ig" })}
@@ -51,7 +51,7 @@ export function ContactTiles() {
           </svg>
         </div>
         <p className="eyebrow mb-2">Instagram</p>
-        <h3 className="font-display text-2xl text-navy mb-2">@Delight Fashion House</h3>
+        <h3 className="font-display text-2xl text-navy mb-2">@delight_fashion_house1</h3>
         <p className="text-sm text-charcoal/70 mb-5">The latest fittings, behind the scenes, and what is on the cutting table this week.</p>
         <span className="text-xs font-bold uppercase tracking-eyebrow text-crimson">Open Instagram →</span>
       </motion.a>
@@ -59,7 +59,7 @@ export function ContactTiles() {
 
       <RevealItem>
       <motion.a
-        href="https://www.pinterest.com/fayinkabeulah/_created/"
+        href="https://www.pinterest.com/fayinkabeulah/"
         target="_blank"
         rel="noopener"
         whileHover={{ y: -6 }}

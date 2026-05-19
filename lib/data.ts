@@ -85,6 +85,7 @@ export const testimonials: Testimonial[] = (testimonialsJson as Array<{
   name: string;
   titleAndOccasion: string;
   archetype?: ArchetypeSlug;
+  rating?: number;
   order: number;
 }>).map((t) => ({
   _id: t.id,
@@ -92,6 +93,7 @@ export const testimonials: Testimonial[] = (testimonialsJson as Array<{
   name: t.name,
   titleAndOccasion: t.titleAndOccasion,
   archetype: t.archetype,
+  rating: t.rating ?? 5,
   order: t.order,
 }));
 
