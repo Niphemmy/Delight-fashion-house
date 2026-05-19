@@ -151,7 +151,17 @@ export function Footer() {
 
         <div className="border-t border-cream/10 pt-6 flex flex-col md:flex-row md:justify-between gap-2 text-xs text-cream/50">
           <div>© 2026 Dé-light Fashion House. All rights reserved.</div>
-          <div>Charting your course. Built by Northern Star Business Consulting.</div>
+          <div>
+            Designed by{" "}
+            <a
+              href="https://northernstarbusinessconsult.com"
+              target="_blank"
+              rel="noopener"
+              className="text-gold hover:text-cream underline underline-offset-2 transition-colors"
+            >
+              Northern Star Business Consulting
+            </a>
+          </div>
         </div>
       </div>
     </footer>
