@@ -88,14 +88,9 @@ export function MeetBeulah() {
           <Item>
             <Link href="/our-story" className="btn-link group">
               Read the full story
-              <motion.span
-                aria-hidden="true"
-                className="inline-block"
-                animate={{ x: [0, 4, 0] }}
-                transition={{ repeat: Infinity, duration: 2.4, ease: "easeInOut" }}
-              >
+              <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">
                 →
-              </motion.span>
+              </span>
             </Link>
           </Item>
         </motion.div>

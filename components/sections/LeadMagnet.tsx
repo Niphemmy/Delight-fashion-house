@@ -40,17 +40,13 @@ export function LeadMagnet() {
 
   return (
     <section className="surface-navy-deep grain section relative overflow-hidden">
-      <motion.div
+      <div
         aria-hidden="true"
         className="absolute -top-32 right-0 w-[420px] h-[420px] bg-gold/12 rounded-full blur-3xl pointer-events-none"
-        animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
-      <motion.div
+      <div
         aria-hidden="true"
         className="absolute -bottom-32 -left-32 w-[420px] h-[420px] bg-crimson/15 rounded-full blur-3xl pointer-events-none"
-        animate={{ scale: [1, 1.15, 1], opacity: [0.6, 0.9, 0.6] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
       />
       <div className="container-site grid lg:grid-cols-12 gap-12 lg:gap-20 items-center relative">
         <Reveal className="lg:col-span-7" y={30}>

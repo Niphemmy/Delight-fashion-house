@@ -48,14 +48,9 @@ export function ArchetypeCards({ archetypes }: { archetypes: Archetype[] }) {
                   <p className="text-sm text-cream-warm/85 leading-snug mb-4 line-clamp-2">{a.oneLiner}</p>
                   <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-eyebrow text-gold relative">
                     {a.cardLabel}
-                    <motion.span
-                      aria-hidden="true"
-                      className="inline-block"
-                      animate={{ x: [0, 3, 0] }}
-                      transition={{ repeat: Infinity, duration: 2.6, ease: "easeInOut" }}
-                    >
+                    <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">
                       →
-                    </motion.span>
+                    </span>
                     <span className="absolute -bottom-1 left-0 h-px bg-gold w-0 group-hover:w-full transition-all duration-300" />
                   </span>
                 </div>

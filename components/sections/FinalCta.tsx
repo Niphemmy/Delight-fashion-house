@@ -9,15 +9,13 @@ export function FinalCta() {
   const { openCheckout } = useModal();
   return (
     <section className="surface-crimson grain section text-center relative overflow-hidden">
-      <motion.div
+      <div
+        aria-hidden="true"
         className="absolute -top-24 -left-24 w-72 h-72 bg-crimson-deep/40 rounded-full blur-3xl pointer-events-none"
-        animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.7, 0.4] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
       />
-      <motion.div
+      <div
+        aria-hidden="true"
         className="absolute -bottom-24 -right-24 w-72 h-72 bg-gold/30 rounded-full blur-3xl pointer-events-none"
-        animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.6, 0.3] }}
-        transition={{ duration: 11, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
       <div className="container-narrow relative">
         <Reveal>

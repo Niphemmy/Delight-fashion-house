@@ -1,111 +1,86 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import { type ReactNode } from "react";
+import { useEffect, useRef, useState, type ElementType, type ReactNode } from "react";
+import { cx } from "@/lib/utils";
 
-const variants: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
-  },
-};
+/**
+ * Lightweight scroll reveal. A one-shot IntersectionObserver toggles a class;
+ * the fade-up itself is a plain CSS transition (GPU composited). No animation
+ * library on the scroll path, so it stays smooth on mid-range phones.
+ */
+function useReveal() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [shown, setShown] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || shown) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setShown(true);
+      return;
+    }
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShown(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -6% 0px" }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [shown]);
+  return { ref, shown };
+}
 
-export function Reveal({
-  children,
-  delay = 0,
-  className,
-  as = "div",
-  amount = 0.18,
-  once = true,
-  y = 24,
-}: {
+interface RevealProps {
   children: ReactNode;
-  delay?: number;
   className?: string;
-  as?: "div" | "section" | "article" | "li" | "span" | "p" | "h2" | "h3";
+  delay?: number;
+  /** accepted for API compatibility; layout no longer changes the tag */
+  as?: ElementType;
   amount?: number;
   once?: boolean;
   y?: number;
-}) {
-  const Tag = motion[as] as typeof motion.div;
+}
+
+export function Reveal({ children, className, delay = 0 }: RevealProps) {
+  const { ref, shown } = useReveal();
   return (
-    <Tag
-      className={className}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once, amount }}
-      variants={{
-        hidden: { opacity: 0, y },
-        show: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 0.65,
-            ease: [0.22, 1, 0.36, 1],
-            delay,
-          },
-        },
-      }}
+    <div
+      ref={ref}
+      className={cx("dl-reveal", shown && "dl-reveal-in", className)}
+      style={delay ? { transitionDelay: `${delay}s` } : undefined}
     >
       {children}
-    </Tag>
+    </div>
   );
 }
 
-export function RevealStagger({
-  children,
-  className,
-  stagger = 0.08,
-  amount = 0.15,
-  once = true,
-}: {
+interface StaggerProps {
   children: ReactNode;
   className?: string;
   stagger?: number;
   amount?: number;
   once?: boolean;
-}) {
+}
+
+export function RevealStagger({ children, className }: StaggerProps) {
+  const { ref, shown } = useReveal();
   return (
-    <motion.div
-      className={className}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once, amount }}
-      variants={{
-        hidden: {},
-        show: { transition: { staggerChildren: stagger, delayChildren: 0.05 } },
-      }}
-    >
+    <div ref={ref} className={cx("dl-stagger", shown && "dl-stagger-in", className)}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-export function RevealItem({
-  children,
-  className,
-  y = 24,
-  as = "div",
-}: {
+interface ItemProps {
   children: ReactNode;
   className?: string;
+  as?: ElementType;
   y?: number;
-  as?: "div" | "li" | "article" | "p" | "span" | "h2" | "h3";
-}) {
-  const Tag = motion[as] as typeof motion.div;
-  return (
-    <Tag
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y },
-        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
-      }}
-    >
-      {children}
-    </Tag>
-  );
 }
 
-export { variants as defaultRevealVariants };
+export function RevealItem({ children, className, as: Tag = "div" }: ItemProps) {
+  return <Tag className={cx("dl-stagger-item", className)}>{children}</Tag>;
+}

@@ -163,10 +163,36 @@
   animation: fadeIn 0.4s ease-out;
 }
 
+/* Scroll reveal: pure CSS, GPU composited, no animation library */
+.dl-reveal,
+.dl-stagger-item {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.dl-reveal-in,
+.dl-stagger-in .dl-stagger-item {
+  opacity: 1;
+  transform: none;
+}
+.dl-stagger-in .dl-stagger-item:nth-child(2) { transition-delay: 0.05s; }
+.dl-stagger-in .dl-stagger-item:nth-child(3) { transition-delay: 0.1s; }
+.dl-stagger-in .dl-stagger-item:nth-child(4) { transition-delay: 0.15s; }
+.dl-stagger-in .dl-stagger-item:nth-child(5) { transition-delay: 0.2s; }
+.dl-stagger-in .dl-stagger-item:nth-child(6) { transition-delay: 0.25s; }
+.dl-stagger-in .dl-stagger-item:nth-child(7) { transition-delay: 0.3s; }
+.dl-stagger-in .dl-stagger-item:nth-child(8) { transition-delay: 0.35s; }
+.dl-stagger-in .dl-stagger-item:nth-child(n + 9) { transition-delay: 0.4s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
   html { scroll-behavior: auto; }
+  .dl-reveal,
+  .dl-stagger-item {
+    opacity: 1;
+    transform: none;
+  }
 }
