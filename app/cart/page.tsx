@@ -14,6 +14,7 @@ const LOCATIONS = [
   "Lagos",
   "Abuja",
   "Port Harcourt",
+  "Ibadan",
   "Other city in Nigeria",
   "Outside Nigeria",
 ];
