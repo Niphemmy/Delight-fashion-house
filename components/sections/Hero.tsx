@@ -10,12 +10,31 @@ export function Hero({ heroImage }: { heroImage: string }) {
 
   return (
     <section className="relative bg-navy-deep text-cream overflow-hidden grain">
-      <div className="container-site grid lg:grid-cols-2 items-center gap-10 lg:gap-20 py-14 lg:py-32 min-h-[calc(100svh-72px)] lg:min-h-0">
+      {/* Editorial watermark numeral */}
+      <span
+        aria-hidden="true"
+        className="absolute -top-6 sm:-top-10 -left-6 sm:-left-10 lg:left-2 font-display italic leading-none text-cream/[0.04] pointer-events-none select-none text-[16rem] sm:text-[22rem] lg:text-[28rem]"
+      >
+        10
+      </span>
+
+      {/* Magazine-style vol tag, large screens only */}
+      <div
+        aria-hidden="true"
+        className="hidden xl:flex absolute left-6 top-1/2 -translate-y-1/2 -rotate-90 origin-center items-center gap-3 text-[0.65rem] uppercase tracking-[0.4em] text-gold/60 font-bold whitespace-nowrap"
+      >
+        <span className="w-10 h-px bg-gold/40" />
+        <span>Vol. 10 · Lagos</span>
+        <span className="w-10 h-px bg-gold/40" />
+      </div>
+
+      <div className="container-site grid lg:grid-cols-2 items-center gap-10 lg:gap-20 py-14 lg:py-32 min-h-[calc(100svh-72px)] lg:min-h-0 relative z-10">
         <div className="relative z-10 order-2 lg:order-1">
           <Reveal delay={0.04}>
-            <p className="eyebrow text-gold mb-5 inline-flex items-center gap-2">
+            <p className="eyebrow text-gold mb-5 inline-flex items-center gap-2.5">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-gold" aria-hidden="true" />
-              Lagos · Est. 2016
+              <span>Lagos · Est. 2016</span>
+              <span className="h-px w-6 bg-gold/45" aria-hidden="true" />
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -51,8 +70,9 @@ export function Hero({ heroImage }: { heroImage: string }) {
           </Reveal>
           <Reveal delay={0.3}>
             <div className="flex items-center gap-3.5 text-[0.6875rem] sm:text-xs uppercase tracking-[0.2em] text-gold font-bold">
-              <span className="h-px w-8 sm:w-10 bg-gold/55" aria-hidden="true" />
+              <span className="h-px w-8 sm:w-10 bg-gold/55 flex-shrink-0" aria-hidden="true" />
               <span>Trusted by executives, brides, and the women who lead.</span>
+              <span className="hidden sm:block h-px flex-1 max-w-[5rem] bg-gold/30" aria-hidden="true" />
             </div>
           </Reveal>
         </div>
@@ -68,6 +88,9 @@ export function Hero({ heroImage }: { heroImage: string }) {
               className="object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-deep/55 to-transparent pointer-events-none" />
+            <div className="absolute top-4 right-4 bg-cream/95 text-navy text-[0.625rem] uppercase tracking-eyebrow font-bold px-2.5 py-1 rounded-sm shadow-sm">
+              Nº 01
+            </div>
             <div className="absolute bottom-4 left-4 right-4 sm:left-5 sm:right-auto bg-navy-deep/85 backdrop-blur text-gold text-[0.6875rem] uppercase tracking-eyebrow font-bold px-3 py-2 rounded-sm">
               Editorial · SS 2026
             </div>
