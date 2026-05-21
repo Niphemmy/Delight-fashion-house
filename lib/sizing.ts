@@ -6,13 +6,15 @@
  *
  * Pricing tiers (applied silently; the customer never sees a "surcharge"
  * line, the displayed price simply updates when she picks her size):
- *   UK 8 to 18   -> base price
- *   UK 20, UK 22 -> base price + NGN 3,000
- *   UK 24, UK 26 -> base price + NGN 5,000
+ *   UK 8 to 14   -> base price (S and M)
+ *   UK 16, 18    -> base x 1.05         (Large, +5%)
+ *   UK 20, 22    -> base x 1.05^2       (Extra Large, +5% on top of L)
+ *   UK 24, 26    -> base x 1.05^3       (Extra Extra Large, +5% on top of XL)
+ * Final number is rounded to the nearest NGN 500 for clean shelf prices.
  *
  * Made to Measure is for women whose shape sits outside the standard
- * range (a fuller bust, a fuller midsection). It is built to her exact
- * measurements; the final price is confirmed with Beulah on WhatsApp.
+ * range. The base "from" price is shown; the final figure is confirmed
+ * with Beulah on WhatsApp.
  */
 
 export type SizeCode =
@@ -29,14 +31,15 @@ export interface SizeOption {
   bustCm: number | null;
   waistCm: number | null;
   hipCm: number | null;
-  surcharge: number;
+  tierMultiplier: number;
   madeToMeasure?: boolean;
 }
 
-function surchargeForUk(uk: number): number {
-  if (uk >= 24) return 5000;
-  if (uk >= 20) return 3000;
-  return 0;
+function multiplierForUk(uk: number): number {
+  if (uk >= 24) return 1.05 ** 3;  // ~1.157625
+  if (uk >= 20) return 1.05 ** 2;  // 1.1025
+  if (uk >= 16) return 1.05;       // 1.05
+  return 1.0;                       // UK 8 to 14
 }
 
 // Bust / waist / hip in inches per UK size (standard 2 inch grading).
@@ -69,7 +72,7 @@ export const STANDARD_SIZES: SizeOption[] = ([8, 10, 12, 14, 16, 18, 20, 22, 24,
       bustCm: toCm(b),
       waistCm: toCm(w),
       hipCm: toCm(h),
-      surcharge: surchargeForUk(uk),
+      tierMultiplier: multiplierForUk(uk),
     };
   }
 );
@@ -85,7 +88,7 @@ export const MADE_TO_MEASURE: SizeOption = {
   bustCm: null,
   waistCm: null,
   hipCm: null,
-  surcharge: 0,
+  tierMultiplier: 1.0,
   madeToMeasure: true,
 };
 
@@ -95,13 +98,20 @@ export function getSize(code: SizeCode): SizeOption {
   return SIZES.find((s) => s.code === code) ?? STANDARD_SIZES[0];
 }
 
+/** Round to the nearest NGN 500. */
+function roundToFiveHundred(n: number): number {
+  return Math.round(n / 500) * 500;
+}
+
 /**
- * Final price for a chosen size. The surcharge is folded into the number;
- * the customer sees one price, not a base plus a fee.
+ * Final price for a chosen size. The tier multiplier is folded in and the
+ * number is smoothed to the nearest NGN 500. The customer sees one price,
+ * not a base plus a fee.
  */
 export function priceForSize(basePrice: number | null, code: SizeCode): number | null {
   if (basePrice === null || basePrice === undefined) return null;
-  return basePrice + getSize(code).surcharge;
+  const opt = getSize(code);
+  return roundToFiveHundred(basePrice * opt.tierMultiplier);
 }
 
 export function isMadeToMeasure(code: SizeCode): boolean {
