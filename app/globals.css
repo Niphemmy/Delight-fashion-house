@@ -163,6 +163,40 @@
   animation: fadeIn 0.4s ease-out;
 }
 
+/* Subtle silk-sheen on primary CTAs to draw the eye without burning cycles */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    transparent 35%,
+    rgba(255, 255, 255, 0.34) 50%,
+    transparent 65%,
+    transparent 100%
+  );
+  transform: translateX(-110%);
+  pointer-events: none;
+  animation: btn-shine 5s cubic-bezier(0.22, 1, 0.36, 1) 1.5s infinite;
+}
+@keyframes btn-shine {
+  0% { transform: translateX(-110%); }
+  35% { transform: translateX(110%); }
+  100% { transform: translateX(110%); }
+}
+.btn-attention {
+  box-shadow: 0 10px 28px -10px rgba(185, 29, 29, 0.65);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-shine::after { display: none; }
+}
+
 /* Scroll reveal: pure CSS, GPU composited, no animation library */
 .dl-reveal,
 .dl-stagger-item {

@@ -28,8 +28,12 @@ export function FinalCta() {
           </p>
         </Reveal>
         <Reveal delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link href="/fashion-inspo" className="btn bg-navy text-cream hover:bg-navy-deep w-full sm:w-auto">
+          <Link
+            href="/fashion-inspo"
+            className="btn btn-shine bg-navy text-cream hover:bg-navy-deep w-full sm:w-auto group"
+          >
             Browse Fashion Inspo
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
           <motion.button
             type="button"
