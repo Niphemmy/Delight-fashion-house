@@ -10,7 +10,7 @@
  *   UK 16, 18    -> base x 1.05         (Large, +5%)
  *   UK 20, 22    -> base x 1.05^2       (Extra Large, +5% on top of L)
  *   UK 24, 26    -> base x 1.05^3       (Extra Extra Large, +5% on top of XL)
- * Final number is rounded to the nearest NGN 500 for clean shelf prices.
+ * Final number is rounded to the nearest NGN 100 for clean shelf prices.
  *
  * Made to Measure is for women whose shape sits outside the standard
  * range. The base "from" price is shown; the final figure is confirmed
@@ -98,20 +98,20 @@ export function getSize(code: SizeCode): SizeOption {
   return SIZES.find((s) => s.code === code) ?? STANDARD_SIZES[0];
 }
 
-/** Round to the nearest NGN 500. */
-function roundToFiveHundred(n: number): number {
-  return Math.round(n / 500) * 500;
+/** Round to the nearest NGN 100. */
+function roundToHundred(n: number): number {
+  return Math.round(n / 100) * 100;
 }
 
 /**
  * Final price for a chosen size. The tier multiplier is folded in and the
- * number is smoothed to the nearest NGN 500. The customer sees one price,
+ * number is smoothed to the nearest NGN 100. The customer sees one price,
  * not a base plus a fee.
  */
 export function priceForSize(basePrice: number | null, code: SizeCode): number | null {
   if (basePrice === null || basePrice === undefined) return null;
   const opt = getSize(code);
-  return roundToFiveHundred(basePrice * opt.tierMultiplier);
+  return roundToHundred(basePrice * opt.tierMultiplier);
 }
 
 export function isMadeToMeasure(code: SizeCode): boolean {
