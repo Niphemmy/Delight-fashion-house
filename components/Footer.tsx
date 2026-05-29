@@ -16,6 +16,7 @@ const SITEMAP = [
   { href: "/size-guide", label: "Size Guide" },
   { href: "/our-story", label: "Our Story" },
   { href: "/contact", label: "Contact" },
+  { href: "/join-the-atelier", label: "Join the Atelier" },
 ];
 
 export function Footer() {

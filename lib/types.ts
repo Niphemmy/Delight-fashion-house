@@ -85,4 +85,5 @@ export interface SiteSettings {
   statSavesMonthly: number;
   leadMagnetTitle: string;
   founderPortrait: string;
+  atelierApplicationFormUrl?: string;
 }

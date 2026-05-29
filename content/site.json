@@ -12,5 +12,6 @@
   "statYears": 10,
   "statSavesMonthly": 600000,
   "leadMagnetTitle": "The Executive Style Guide",
-  "founderPortrait": "/designs/founder-portrait.jpg"
+  "founderPortrait": "/designs/founder-portrait.jpg",
+  "atelierApplicationFormUrl": ""
 }
