@@ -201,7 +201,7 @@ export default async function JoinTheAtelierPage() {
                   rel="noopener"
                   className="btn btn-gold w-full"
                 >
-                  Apply via the form
+                  Apply via the form (Recommended)
                 </a>
               )}
               <a
