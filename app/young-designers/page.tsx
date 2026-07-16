@@ -209,50 +209,72 @@ export default async function YoungDesignersPage() {
         >
           9-13
         </span>
-        <div className="container-site relative z-10 py-16 lg:py-24">
-          <Reveal>
-            <p className="eyebrow text-gold mb-5 inline-flex items-center gap-2.5">
-              <span className="inline-block w-1.5 h-1.5 rounded-full bg-gold" aria-hidden="true" />
-              <span>Dé-light Fashion House presents</span>
-            </p>
-          </Reveal>
-          <Reveal delay={0.06}>
-            <h1 className="display-1 text-cream mb-6 max-w-4xl">
-              While every other girl on her street spends August scrolling,{" "}
-              <em className="font-display italic text-gold font-medium">yours will walk out with a skill she keeps for life.</em>
-            </h1>
-          </Reveal>
-          <Reveal delay={0.14}>
-            <p className="body-lead text-cream-warm/85 max-w-2xl mb-9">
-              Three weeks. Ages 9 to 13. The Dé-light Fashion House atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
-            </p>
-          </Reveal>
-          <Reveal delay={0.22}>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href={primaryCta} target="_blank" rel="noopener" className="btn btn-primary btn-attention w-full sm:w-auto group">
-                {primaryCtaLabel}
-                <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-              <a href="#offer" className="btn btn-ghost-cream w-full sm:w-auto">See what is included</a>
-            </div>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mt-8 pt-8 border-t border-cream/10">
-              <div>
-                <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Dates</p>
-                <p className="text-sm text-cream-warm/90">Aug 10 to 28, 2026</p>
+        <div className="container-site grid lg:grid-cols-2 items-center gap-10 lg:gap-16 py-14 lg:py-24 relative z-10">
+          <div className="order-2 lg:order-1">
+            <Reveal>
+              <p className="eyebrow text-gold mb-5 inline-flex items-center gap-2.5">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-gold" aria-hidden="true" />
+                <span>Dé-light Fashion House presents</span>
+              </p>
+            </Reveal>
+            <Reveal delay={0.06}>
+              <h1 className="display-1 text-cream mb-6">
+                While every other girl on her street spends August scrolling,{" "}
+                <em className="font-display italic text-gold font-medium">yours will walk out with a skill she keeps for life.</em>
+              </h1>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <p className="body-lead text-cream-warm/85 mb-9">
+                Three weeks. Ages 9 to 13. The Dé-light Fashion House atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
+              </p>
+            </Reveal>
+            <Reveal delay={0.22}>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href={primaryCta} target="_blank" rel="noopener" className="btn btn-primary btn-attention w-full sm:w-auto group">
+                  {primaryCtaLabel}
+                  <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+                <a href="#offer" className="btn btn-ghost-cream w-full sm:w-auto">See what is included</a>
               </div>
-              <div>
-                <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Location</p>
-                <p className="text-sm text-cream-warm/90">Eleyele, Ibadan</p>
+            </Reveal>
+            <Reveal delay={0.3}>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 pt-6 border-t border-cream/10">
+                <div>
+                  <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Dates</p>
+                  <p className="text-sm text-cream-warm/90">Aug 10 to 28, 2026</p>
+                </div>
+                <div>
+                  <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Location</p>
+                  <p className="text-sm text-cream-warm/90">Eleyele, Ibadan</p>
+                </div>
+                <div>
+                  <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Ages</p>
+                  <p className="text-sm text-cream-warm/90">9 to 13 years</p>
+                </div>
+                <div>
+                  <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Slots left</p>
+                  <p className="text-sm text-crimson font-bold">Fewer than 20</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Ages</p>
-                <p className="text-sm text-cream-warm/90">9 to 13 years</p>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.08} className="order-1 lg:order-2">
+            <div className="relative aspect-[4/5] lg:aspect-[5/6] max-w-[520px] w-full mx-auto rounded-md overflow-hidden shadow-modal ring-1 ring-gold/20">
+              <Image
+                src="/designs/founder-portrait.jpg"
+                alt="Beulah, founder of Dé-light Fashion House and lead tutor of the Young Fashion Designers Summer Academy"
+                fill
+                sizes="(max-width: 1024px) 90vw, 520px"
+                priority
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-deep/85 to-transparent pointer-events-none" />
+              <div className="absolute top-4 right-4 bg-cream/95 text-navy text-[0.625rem] uppercase tracking-eyebrow font-bold px-2.5 py-1 rounded-sm shadow-sm">
+                Lead Tutor
               </div>
-              <div>
-                <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Slots left</p>
-                <p className="text-sm text-crimson font-bold">Fewer than 20</p>
+              <div className="absolute bottom-4 left-4 right-4 sm:left-5 sm:right-auto bg-navy-deep/85 backdrop-blur text-gold text-[0.6875rem] uppercase tracking-eyebrow font-bold px-3 py-2 rounded-sm max-w-[280px]">
+                Beulah · Ten years in the atelier
               </div>
             </div>
           </Reveal>
@@ -355,8 +377,24 @@ export default async function YoungDesignersPage() {
               Not a camp. Not a workshop. A three week apprenticeship in a working atelier in Eleyele, Ibadan, designed specifically for girls between 9 and 13 who have something creative inside them and nowhere to put it.
             </p>
           </Reveal>
+          <Reveal delay={0.08}>
+            <div className="relative aspect-[16/9] w-full rounded-md overflow-hidden shadow-card ring-1 ring-charcoal/10 mt-4 mb-10">
+              <Image
+                src="/designs/studio-01.jpg"
+                alt="The Dé-light Fashion House atelier space where the academy will be held"
+                fill
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-navy-deep/70 to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 right-4 sm:left-6 text-cream">
+                <p className="eyebrow text-gold mb-1">The room</p>
+                <p className="font-display text-lg sm:text-xl leading-tight">The same atelier where Lagos brides come for their fittings. This is where your daughter will be.</p>
+              </div>
+            </div>
+          </Reveal>
           <Reveal delay={0.1}>
-            <div className="grid sm:grid-cols-2 gap-6 mt-10">
+            <div className="grid sm:grid-cols-2 gap-6 mt-4">
               <div className="bg-cream-warm border border-charcoal/10 rounded-md p-6">
                 <p className="eyebrow mb-3 text-crimson">Where</p>
                 <p className="font-display text-2xl text-navy mb-1">Eleyele, Ibadan</p>
@@ -391,39 +429,63 @@ export default async function YoungDesignersPage() {
               Three hours. Real atelier. Real hands. Real work.
             </h2>
           </Reveal>
-          <div className="space-y-4">
-            {[
-              {
-                time: "First 20 minutes",
-                title: "Sketching",
-                body: "Every day opens with a sketch. Not perfect, not judged. Just her pencil on her pad, warming up the muscle in her brain that turns an idea into a picture.",
-              },
-              {
-                time: "40 minutes",
-                title: "Design lesson",
-                body: "One concept per day. How a peplum sits. Why a puff sleeve needs structure. What a dart does. Small, digestible, memorable.",
-              },
-              {
-                time: "90 minutes",
-                title: "Hands on with fabric",
-                body: "Cutting, pinning, threading, sewing on a real industrial machine (age appropriate, fully supervised). This is where the skill actually lives.",
-              },
-              {
-                time: "20 minutes",
-                title: "Show and tell",
-                body: "Every child holds up what she did. She names one thing she is proud of. The room claps. She goes home with something to talk about at dinner.",
-              },
-            ].map((slot, i) => (
-              <Reveal key={i} delay={0.04 * (i + 1)}>
-                <div className="bg-cream rounded-md border border-charcoal/10 p-5 sm:p-6 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6">
-                  <div className="sm:w-40 flex-shrink-0">
+          <div className="grid lg:grid-cols-[1fr,1fr] gap-6 lg:gap-10 items-start">
+            <div className="space-y-4">
+              {[
+                {
+                  time: "First 20 minutes",
+                  title: "Sketching",
+                  body: "Every day opens with a sketch. Not perfect, not judged. Just her pencil on her pad, warming up the muscle in her brain that turns an idea into a picture.",
+                },
+                {
+                  time: "40 minutes",
+                  title: "Design lesson",
+                  body: "One concept per day. How a peplum sits. Why a puff sleeve needs structure. What a dart does. Small, digestible, memorable.",
+                },
+                {
+                  time: "90 minutes",
+                  title: "Hands on with fabric",
+                  body: "Cutting, pinning, threading, sewing on a real industrial machine (age appropriate, fully supervised). This is where the skill actually lives.",
+                },
+                {
+                  time: "20 minutes",
+                  title: "Show and tell",
+                  body: "Every child holds up what she did. She names one thing she is proud of. The room claps. She goes home with something to talk about at dinner.",
+                },
+              ].map((slot, i) => (
+                <Reveal key={i} delay={0.04 * (i + 1)}>
+                  <div className="bg-cream rounded-md border border-charcoal/10 p-5 sm:p-6">
                     <p className="eyebrow text-crimson mb-1">{slot.time}</p>
-                    <p className="font-display text-xl text-navy">{slot.title}</p>
+                    <p className="font-display text-xl text-navy mb-2">{slot.title}</p>
+                    <p className="text-sm sm:text-base text-charcoal/80 leading-relaxed">{slot.body}</p>
                   </div>
-                  <p className="text-sm sm:text-base text-charcoal/80 leading-relaxed">{slot.body}</p>
+                </Reveal>
+              ))}
+            </div>
+            <div className="hidden lg:flex flex-col gap-4 sticky top-24">
+              <Reveal delay={0.1}>
+                <div className="relative aspect-[4/5] rounded-md overflow-hidden shadow-card ring-1 ring-charcoal/10">
+                  <Image
+                    src="/designs/studio-06.jpg"
+                    alt="Inside the Dé-light atelier"
+                    fill
+                    sizes="500px"
+                    className="object-cover"
+                  />
                 </div>
               </Reveal>
-            ))}
+              <Reveal delay={0.16}>
+                <div className="relative aspect-[4/3] rounded-md overflow-hidden shadow-card ring-1 ring-charcoal/10">
+                  <Image
+                    src="/designs/studio-11.jpg"
+                    alt="A finished Dé-light piece"
+                    fill
+                    sizes="500px"
+                    className="object-cover"
+                  />
+                </div>
+              </Reveal>
+            </div>
           </div>
         </div>
       </section>
