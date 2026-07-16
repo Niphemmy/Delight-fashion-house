@@ -90,6 +90,12 @@ const REWARDS = [
     value: "₦50,000",
   },
   {
+    label: "Pinterest feature on the Dé-light Fashion House board",
+    detail:
+      "Her design pinned on a board with 500,000+ monthly viewers. Pinterest is where the world's mood boards live. Her piece goes on the same boards Nigerian brides, Lagos executives, and international stylists screenshot from every day.",
+    value: "₦100,000",
+  },
+  {
     label: "Custom Dé-light designer sketchbook to keep after the program",
     detail:
       "Her name embossed on the front. Two hundred blank pages. So when the three weeks are over, the sketching does not stop.",
@@ -466,7 +472,7 @@ export default async function YoungDesignersPage() {
           <Reveal>
             <p className="eyebrow text-gold mb-3">Here is exactly what she gets</p>
             <h2 className="display-2 text-cream mb-4 text-balance">
-              Twelve things that would cost you over ₦540,000 if you tried to buy them separately.
+              Thirteen things that would cost you over ₦640,000 if you tried to buy them separately.
             </h2>
             <p className="body-lead text-cream-warm/75 mb-10 max-w-2xl">
               We stack the whole thing into one price because a child's summer has one window, and no mother should be counting kobo when she is watching her daughter light up.
@@ -496,12 +502,12 @@ export default async function YoungDesignersPage() {
             <div className="mt-10 bg-crimson/10 border border-gold/30 rounded-md p-6 sm:p-8 text-center">
               <p className="eyebrow text-gold mb-2">Total real value</p>
               <p className="font-display text-3xl sm:text-4xl text-cream mb-3">
-                <span className="line-through text-cream-warm/40">₦540,000</span>
+                <span className="line-through text-cream-warm/40">₦640,000</span>
               </p>
               <p className="eyebrow text-gold mb-2">Your investment today</p>
               <p className="font-display text-5xl sm:text-6xl text-gold mb-2">₦55,000</p>
               <p className="text-sm text-cream-warm/60 italic mb-4">
-                That is roughly one tenth of the value stacked above.
+                Under one twelfth of the value stacked above.
               </p>
               <p className="text-sm text-cream-warm/75 max-w-lg mx-auto">
                 Only <strong className="text-gold">₦20,000 deposit</strong> to reserve her slot right now. The balance of ₦35,000 is due on the first day of class.
