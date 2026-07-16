@@ -86,4 +86,5 @@ export interface SiteSettings {
   leadMagnetTitle: string;
   founderPortrait: string;
   atelierApplicationFormUrl?: string;
+  summerAcademyFormUrl?: string;
 }
