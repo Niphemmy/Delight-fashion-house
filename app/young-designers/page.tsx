@@ -48,40 +48,76 @@ const PAIN_POINTS = [
 
 const REWARDS = [
   {
-    label: "Three weeks of hands on training",
+    label: "Three weeks of hands on training inside a working atelier",
     detail:
-      "Directly with a 10 year atelier owner and her team of tutors. Not YouTube. Not a class of 60. A studio, real fabric, real machines, real hands.",
+      "Sixty hours across fifteen days. Directly with the Dé-light Fashion House team. Not YouTube. Not a class of 60. A studio, real fabric, real machines, real hands.",
     value: "₦180,000",
   },
   {
-    label: "Every material, tool, and fabric she will use",
+    label: "Every material, tool, and fabric she will use for three weeks",
     detail:
-      "No shopping list to chase. No half list of \"bring your own\" that turns into stress the night before. It is all included. She walks in with her lunch. She walks out with a skill.",
+      "No shopping list to chase. No half list of \"bring your own\" that turns into stress the night before. Sketch pads, pencils, fabric, thread, needles, notions, all of it. She walks in with her lunch. She walks out with a skill.",
     value: "₦45,000",
   },
   {
-    label: "One garment she designed and made herself",
+    label: "One garment she designed and sewed herself, taken home",
     detail:
-      "She takes it home. She wears it to church. When somebody asks her where she got it, she says the words \"I made this\". That sentence changes a child.",
+      "She wears it to church. Somebody asks her where she got it. She says the words \"I made this\". That sentence changes a child.",
     value: "₦25,000",
   },
   {
-    label: "Certificate of Completion signed by Beulah",
+    label: "Certificate of Completion, signed and stamped",
     detail:
       "Framed if you want to frame it. Something she keeps. Something that goes on her CV before she is old enough to write one.",
-    value: "priceless",
+    value: "₦15,000",
   },
   {
-    label: "End of program showcase, parents invited",
+    label: "End of program runway showcase with parents in the front row",
     detail:
       "Every child walks the runway with the piece she made. You are in the audience. Photos are taken. She sees you clap. This is the moment she will remember for years.",
-    value: "priceless",
+    value: "₦40,000",
+  },
+  {
+    label: "Professional photo shoot of her in her finished garment",
+    detail:
+      "Studio lighting, proper backdrop, real photographer. You get the high resolution files. She gets a photo she will still be showing people in fifteen years.",
+    value: "₦35,000",
   },
   {
     label: "Instagram feature on the Dé-light Fashion House page",
     detail:
       "Her design, her name, her spotlight on a page 17,000+ women follow. She becomes a designer in the world's eyes, not just her mother's.",
     value: "₦50,000",
+  },
+  {
+    label: "Custom Dé-light designer sketchbook to keep after the program",
+    detail:
+      "Her name embossed on the front. Two hundred blank pages. So when the three weeks are over, the sketching does not stop.",
+    value: "₦12,000",
+  },
+  {
+    label: "Private WhatsApp group for the mothers of the cohort",
+    detail:
+      "Daily photos of what your daughter is working on. A group of other Ibadan mothers going through the same three weeks. Beulah and the tutors reachable directly.",
+    value: "₦20,000",
+  },
+  {
+    label: "Follow-up visit six weeks after graduation",
+    detail:
+      "One afternoon back at the atelier, six weeks later, for the whole cohort. To check progress, sharpen a skill, keep the fire lit. Snacks on us.",
+    value: "₦18,000",
+  },
+  {
+    label: "One year gift voucher: ₦25,000 off her mother's next Dé-light order",
+    detail:
+      "Because the mother who invests in her daughter's summer deserves to reward herself with a new look too. Redeemable on any custom piece for a full year.",
+    value: "₦25,000",
+  },
+  {
+    label: "Automatic entry for the three signature prizes",
+    detail:
+      "Mannequin, Beading Kit, Pattern Tools. Every registered child is in the running. Full details below.",
+    value: "₦75,000+",
   },
 ];
 
@@ -118,7 +154,7 @@ const NOT_FOR_HER = [
 const FAQS = [
   {
     q: "Where exactly is the academy held?",
-    a: "At Beulah's atelier in Eleyele, Ibadan. Full address is shared once your slot is confirmed. Secure premises, parents welcome to inspect before day one.",
+    a: "At the Dé-light Fashion House atelier in Eleyele, Ibadan. Full address is shared once your slot is confirmed. Secure premises, parents welcome to inspect before day one.",
   },
   {
     q: "What are the daily hours?",
@@ -134,7 +170,7 @@ const FAQS = [
   },
   {
     q: "Is it safe? Who is supervising?",
-    a: "Beulah is on site every day with two trained atelier assistants. Machines are supervised at all times. First aid on premises. Sign in and sign out is logged for every child.",
+    a: "The Dé-light team is on site every day: Beulah plus two trained atelier assistants. Machines are supervised at all times. First aid on premises. Sign in and sign out is logged for every child.",
   },
   {
     q: "Sibling discount?",
@@ -182,7 +218,7 @@ export default async function YoungDesignersPage() {
           </Reveal>
           <Reveal delay={0.14}>
             <p className="body-lead text-cream-warm/85 max-w-2xl mb-9">
-              Three weeks. Ages 9 to 13. Beulah's atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
+              Three weeks. Ages 9 to 13. The Dé-light Fashion House atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
             </p>
           </Reveal>
           <Reveal delay={0.22}>
@@ -221,7 +257,7 @@ export default async function YoungDesignersPage() {
       <section className="surface-cream section">
         <div className="container-narrow">
           <Reveal>
-            <p className="eyebrow mb-3 text-crimson">Read this if it stings</p>
+            <p className="eyebrow mb-3 text-crimson">Before you read the offer</p>
             <h2 className="display-2 mb-6 text-balance">
               The 4am realisation every Nigerian mother is quietly trying to avoid.
             </h2>
@@ -251,7 +287,9 @@ export default async function YoungDesignersPage() {
 
           <Reveal delay={0.28}>
             <div className="mt-12 bg-cream-warm border-l-4 border-crimson rounded-sm p-6 sm:p-8">
-              <p className="eyebrow mb-4 text-crimson">The specific pains, out loud</p>
+              <p className="font-display text-2xl sm:text-3xl text-navy mb-6 leading-tight">
+                Read this. If any of it lands too close to home, you already know what to do.
+              </p>
               <ul className="space-y-3">
                 {PAIN_POINTS.map((p, i) => (
                   <li key={i} className="flex gap-3 text-sm sm:text-base text-charcoal/85 leading-relaxed">
@@ -316,7 +354,7 @@ export default async function YoungDesignersPage() {
               <div className="bg-cream-warm border border-charcoal/10 rounded-md p-6">
                 <p className="eyebrow mb-3 text-crimson">Where</p>
                 <p className="font-display text-2xl text-navy mb-1">Eleyele, Ibadan</p>
-                <p className="text-sm text-charcoal/70">Beulah's own atelier. The same room where Lagos brides come for their fittings.</p>
+                <p className="text-sm text-charcoal/70">The Dé-light Fashion House atelier. The same room where Lagos brides come for their fittings.</p>
               </div>
               <div className="bg-cream-warm border border-charcoal/10 rounded-md p-6">
                 <p className="eyebrow mb-3 text-crimson">When</p>
@@ -325,8 +363,8 @@ export default async function YoungDesignersPage() {
               </div>
               <div className="bg-cream-warm border border-charcoal/10 rounded-md p-6">
                 <p className="eyebrow mb-3 text-crimson">Who teaches</p>
-                <p className="font-display text-2xl text-navy mb-1">Beulah + team</p>
-                <p className="text-sm text-charcoal/70">10 years dressing Lagos executives, brides, and aso ebi families. And two trained atelier assistants.</p>
+                <p className="font-display text-2xl text-navy mb-1">The Dé-light team</p>
+                <p className="text-sm text-charcoal/70">Founder Beulah plus two trained atelier assistants. Ten years dressing Lagos executives, brides, and aso ebi families.</p>
               </div>
               <div className="bg-cream-warm border border-charcoal/10 rounded-md p-6">
                 <p className="eyebrow mb-3 text-crimson">How many</p>
@@ -428,7 +466,7 @@ export default async function YoungDesignersPage() {
           <Reveal>
             <p className="eyebrow text-gold mb-3">Here is exactly what she gets</p>
             <h2 className="display-2 text-cream mb-4 text-balance">
-              Six things that would cost you ₦300,000 if you tried to buy them separately.
+              Twelve things that would cost you over ₦540,000 if you tried to buy them separately.
             </h2>
             <p className="body-lead text-cream-warm/75 mb-10 max-w-2xl">
               We stack the whole thing into one price because a child's summer has one window, and no mother should be counting kobo when she is watching her daughter light up.
@@ -458,10 +496,13 @@ export default async function YoungDesignersPage() {
             <div className="mt-10 bg-crimson/10 border border-gold/30 rounded-md p-6 sm:p-8 text-center">
               <p className="eyebrow text-gold mb-2">Total real value</p>
               <p className="font-display text-3xl sm:text-4xl text-cream mb-3">
-                <span className="line-through text-cream-warm/40">₦300,000+</span>
+                <span className="line-through text-cream-warm/40">₦540,000</span>
               </p>
               <p className="eyebrow text-gold mb-2">Your investment today</p>
-              <p className="font-display text-5xl sm:text-6xl text-gold mb-4">₦55,000</p>
+              <p className="font-display text-5xl sm:text-6xl text-gold mb-2">₦55,000</p>
+              <p className="text-sm text-cream-warm/60 italic mb-4">
+                That is roughly one tenth of the value stacked above.
+              </p>
               <p className="text-sm text-cream-warm/75 max-w-lg mx-auto">
                 Only <strong className="text-gold">₦20,000 deposit</strong> to reserve her slot right now. The balance of ₦35,000 is due on the first day of class.
               </p>
