@@ -11,6 +11,14 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["@sanity/image-url"],
   },
+  async redirects() {
+    return [
+      // Short brandable link for WhatsApp / Instagram bios
+      { source: "/summer", destination: "/young-designers", permanent: false },
+      { source: "/academy", destination: "/young-designers", permanent: false },
+      { source: "/kids", destination: "/young-designers", permanent: false },
+    ];
+  },
 };
 
 export default nextConfig;
