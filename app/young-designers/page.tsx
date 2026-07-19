@@ -5,7 +5,7 @@ import { Reveal } from "@/components/animation/Reveal";
 import { getSiteSettings } from "@/lib/sanity";
 
 export const metadata: Metadata = {
-  title: "Young Fashion Designers Summer Academy 2026 · Eleyele, Ibadan · Ages 9 to 13",
+  title: "Young Fashion Designers Summer Academy 2026 · Eleyele, Ibadan · Ages 9 to 15",
   description:
     "3 weeks that quietly change the shape of your daughter's life. August 10 to 28, 2026. Eleyele, Ibadan. Registration closes July 31. Only 20 slots.",
 };
@@ -143,7 +143,7 @@ const PRIZES = [
 ];
 
 const FOR_HER = [
-  "She is between 9 and 13 years old.",
+  "She is between 9 and 15 years old.",
   "She has ever asked you why clothes cost so much, or why a dress fits one girl and not another.",
   "She sketches in the margins of her notebooks.",
   "She undresses her dolls and re-styles them.",
@@ -152,7 +152,7 @@ const FOR_HER = [
 ];
 
 const NOT_FOR_HER = [
-  "She is under 9 or over 13. The teaching pace is designed for this window.",
+  "She is under 9 or over 15. The teaching pace is designed for this window.",
   "You are looking for free daycare. This is a training, not a babysitting service.",
   "You want to enrol her against her will. She has to want it, even a little.",
 ];
@@ -207,7 +207,7 @@ export default async function YoungDesignersPage() {
           aria-hidden="true"
           className="absolute -top-10 -left-10 font-display italic leading-none text-cream/[0.05] pointer-events-none select-none text-[16rem] sm:text-[22rem] lg:text-[26rem]"
         >
-          9-13
+          9-15
         </span>
         <div className="container-site grid lg:grid-cols-2 items-center gap-10 lg:gap-16 py-14 lg:py-24 relative z-10">
           <div className="order-2 lg:order-1">
@@ -225,7 +225,7 @@ export default async function YoungDesignersPage() {
             </Reveal>
             <Reveal delay={0.14}>
               <p className="body-lead text-cream-warm/85 mb-9">
-                Three weeks. Ages 9 to 13. The Dé-light Fashion House atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
+                Three weeks. Ages 9 to 15. The Dé-light Fashion House atelier in Eleyele, Ibadan. She arrives a child who scrolls. She leaves a child who designs, sketches, cuts, and sews. And you get to watch it happen from the front row of the showcase.
               </p>
             </Reveal>
             <Reveal delay={0.22}>
@@ -249,7 +249,7 @@ export default async function YoungDesignersPage() {
                 </div>
                 <div>
                   <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Ages</p>
-                  <p className="text-sm text-cream-warm/90">9 to 13 years</p>
+                  <p className="text-sm text-cream-warm/90">9 to 15 years</p>
                 </div>
                 <div>
                   <p className="text-[0.65rem] uppercase tracking-eyebrow text-gold font-bold mb-1">Slots left</p>
@@ -337,23 +337,23 @@ export default async function YoungDesignersPage() {
           <Reveal>
             <p className="eyebrow text-gold mb-3">The window nobody warns you about</p>
             <h2 className="display-2 text-cream mb-6 text-balance">
-              Between 9 and 13, a girl decides who she is going to become. After 15, she mostly just decorates that person.
+              Between 9 and 15, a girl decides who she is going to become. By her late teens, she mostly just decorates that person.
             </h2>
           </Reveal>
           <div className="space-y-5 text-base sm:text-lg leading-relaxed text-cream-warm/85 max-w-2xl">
             <Reveal delay={0.05}>
               <p>
-                The child development people call it the identity formation window. The years between 9 and 13 are when a girl's brain is actively searching for the thing she is good at. The thing that will become part of her self image for the rest of her life.
+                The child development people call it the identity formation window. The years between 9 and 15 are when a girl's brain is actively searching for the thing she is good at. The thing that will become part of her self image for the rest of her life.
               </p>
             </Reveal>
             <Reveal delay={0.1}>
               <p>
-                Miss the window and it does not close, exactly. It just gets much, much heavier to reopen. The 20 year old who says "I always wanted to try that but I do not think I am creative" is usually a 12 year old who was never handed the fabric.
+                Miss the window and it does not close, exactly. It just gets much, much heavier to reopen. The 22 year old who says "I always wanted to try that but I do not think I am creative" is usually a 13 year old who was never handed the fabric.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="text-gold italic">
-                Your daughter is inside the window right now. She will not be inside it forever. And every summer she spends inside a tablet is a summer the window is closing a little further.
+                Your daughter is inside the window right now, and if she is closer to 15 than to 9, you are staring at one of the last summers she will be inside it at all. Every summer she spends inside a tablet is a summer the window closes a little further.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
@@ -374,7 +374,7 @@ export default async function YoungDesignersPage() {
               The Dé-light Young Fashion Designers Summer Academy 2026.
             </h2>
             <p className="body-lead text-charcoal/75 max-w-2xl mb-8">
-              Not a camp. Not a workshop. A three week apprenticeship in a working atelier in Eleyele, Ibadan, designed specifically for girls between 9 and 13 who have something creative inside them and nowhere to put it.
+              Not a camp. Not a workshop. A three week apprenticeship in a working atelier in Eleyele, Ibadan, designed specifically for girls between 9 and 15 who have something creative inside them and nowhere to put it.
             </p>
           </Reveal>
           <Reveal delay={0.08}>
