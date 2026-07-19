@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { existsSync } from "fs";
+import { join } from "path";
 import { Reveal } from "@/components/animation/Reveal";
 import { getSiteSettings } from "@/lib/sanity";
+
+const FLYER_REL_PATH = "/flyers/young-designers-summer-academy-2026.jpg";
 
 export const metadata: Metadata = {
   title: "Young Fashion Designers Summer Academy 2026 · Eleyele, Ibadan · Ages 9 to 15",
@@ -198,6 +202,7 @@ export default async function YoungDesignersPage() {
   const hasForm = Boolean(formUrl);
   const primaryCta = hasForm ? formUrl : WHATSAPP_RESERVE_URL;
   const primaryCtaLabel = hasForm ? "Reserve Her Slot Now" : "Reserve Her Slot on WhatsApp";
+  const hasFlyer = existsSync(join(process.cwd(), "public", FLYER_REL_PATH));
 
   return (
     <>
@@ -280,6 +285,34 @@ export default async function YoungDesignersPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* THE FLYER — auto-shows once the file is dropped in public/flyers/young-designers-summer-academy-2026.jpg */}
+      {hasFlyer && (
+        <section className="surface-cream-warm section-tight">
+          <div className="container-narrow">
+            <Reveal>
+              <p className="eyebrow text-crimson mb-3 text-center">The flyer, in full</p>
+              <h2 className="display-3 mb-8 text-center text-balance max-w-2xl mx-auto">
+                You may have seen this on WhatsApp or Instagram. Here it is again, for the mothers who need to sit with it a minute.
+              </h2>
+              <div className="max-w-md mx-auto">
+                <div className="relative rounded-md overflow-hidden shadow-modal ring-1 ring-gold/20">
+                  <Image
+                    src={FLYER_REL_PATH}
+                    alt="Dé-light Fashion House Young Fashion Designers Summer Academy 2026 flyer, showing dates, venue, fee and prizes"
+                    width={1080}
+                    height={1350}
+                    className="w-full h-auto block"
+                  />
+                </div>
+                <p className="text-xs italic text-charcoal/55 mt-4 text-center">
+                  Note: the flyer shows the original 9 to 13 range. This year's cohort has been widened to include 15 year olds.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       {/* THE PAIN */}
       <section className="surface-cream section">
